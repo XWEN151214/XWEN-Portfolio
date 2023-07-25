@@ -1,0 +1,196 @@
+/* General Styling */
+
+html
+{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body
+{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+:root
+{
+    --primary: #c2000b;
+	--primary-light: #ac2c32;
+	--secondary: #f96311;
+	--gradient: linear-gradient(to right,#c2000b, #f96311);
+}
+
+.link
+{
+    font-weight: bold;
+}
+
+.link:hover
+{
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6,
+p,
+.link
+{
+   font-size: medium;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-style: oblique;
+}
+
+ul
+{
+   list-style-type: none;
+}
+
+#box
+{
+    box-shadow: 3px 3px 3px 3px #8d8c8c;
+}
+
+.slider-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: var(--primary);
+    cursor: pointer;
+    z-index: 2;
+}
+
+.next
+{
+    background-image: url(../pictures/fa-next.png);
+    width: 30px;
+    height: 30px;
+    left: 95%;
+}
+
+.prev
+{
+    background-image: url(../pictures/fa-prev.png);
+    width: 30px;
+    height: 30px;
+}
+
+/* Main */
+
+.main
+{
+    background-image: url(../pictures/cover2.png);
+    background-size: 1200px;
+    background-repeat: no-repeat;
+}
+
+/* Main Menu */
+
+.menu .row .menu-items
+{
+    position: relative;
+}
+
+.menu .row .menu-items .menu-item .link
+{
+   color: #ffff;
+}
+
+.menu .row .menu-items .menu-item .link:hover
+{
+   text-decoration: underline #ffff ;
+}
+
+.menu .row .logo
+{
+    height: 5rem;
+    width: 5rem;
+}
+
+.menu .row .text-logo
+{
+    font-weight: bolder;
+    font-style: oblique;
+    font-size: 25px;
+    color: #ffff;
+}
+
+/* Header */
+
+.header
+{
+  height: 30rem;
+  width: 100%;
+}
+
+.header .cover
+{
+    height: 20rem;
+    width: 50%;
+    left: 0;
+    margin: 0;
+    background-image: url(../pictures/cover1.png);
+    background-size: 700px;
+}
+
+.header h2, .header h3
+{
+   font-style: oblique;
+   font-size: larger;
+   font-weight: bold;
+   color: #ffff;
+}
+
+.header .intro
+{
+    width: 100%;
+    margin-left: 3%;
+}
+
+.header .intro-text
+{
+    left: 1rem;
+    animation: slide-in 2s 1;
+    position: relative;
+}
+
+.header .intro .stat
+{
+    min-width: 7rem;
+    border-radius: 10px;
+    animation: slide-up 3s 1;
+    position: relative;
+}
+
+.header .intro .stat h4, .header .intro .stat p
+{
+   color: #ffff;
+   font-weight: bold;
+}
+
+/* KeyFrames */
+
+@keyframes slide-in {
+
+    from
+    {
+        left: -40rem;
+    }
+
+    to
+    {
+        left: 1rem;
+    }   
+}
+
+@keyframes slide-up 
+{
+    from
+    {
+        bottom: -10rem;
+    }
+
+    to
+    {
+        bottom: 0;
+    }
+}
