@@ -2,20 +2,18 @@
 
 html
 {
-    width: 100%;
     overflow-x: hidden;
 }
 
 body
 {
-    width: 100%;
     overflow-x: hidden;
 }
 
 :root
 {
     --primary: #c2000b;
-	--primary-light: #ac2c32;
+	--primary-light: #faaB7f;
 	--secondary: #f96311;
 	--gradient: linear-gradient(to right,#c2000b, #f96311);
 }
@@ -51,10 +49,6 @@ ul
 
 .slider-control {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 24px;
-    color: var(--primary);
     cursor: pointer;
     z-index: 2;
 }
@@ -64,7 +58,6 @@ ul
     background-image: url(../pictures/fa-next.png);
     width: 30px;
     height: 30px;
-    left: 95%;
 }
 
 .prev
@@ -79,8 +72,16 @@ ul
 .main
 {
     background-image: url(../pictures/cover2.png);
-    background-size: 1200px;
+    background-size: cover;
     background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px)
+{
+    .main
+    {
+       background-size: 1200px;
+    }    
 }
 
 /* Main Menu */
@@ -90,12 +91,62 @@ ul
     position: relative;
 }
 
-.menu .row .menu-items .menu-item .link
+.menu .row .mobile-menu-items
+{
+    display: none;
+    width: 10rem;
+    margin-top: 2rem;
+    margin-left: 33rem;
+    position: absolute;
+    background-color: var(--primary);
+    border-radius: 10px;
+    z-index: 10;
+}
+
+@media screen and (max-width: 768px) 
+{
+    .menu .row .mobile-menu-items
+    {
+        margin-left: 37rem;
+    }
+}
+
+@media screen and (max-width: 425px) 
+{
+    .menu .row .mobile-menu-items
+    {
+        margin-left: 17rem;
+    }
+}
+
+@media screen and (max-width: 375px) 
+{
+    .menu .row .mobile-menu-items
+    {
+        margin-left: 14rem;
+    }
+}
+
+@media screen and (max-width: 320px) 
+{
+    .menu .row .mobile-menu-items
+    {
+        margin-left: 10rem;
+    }
+}
+
+.menu .row .mobile-menu-items .menu-item
+{
+    position: relative;
+    left: 0;
+}
+
+.menu .row .link
 {
    color: #ffff;
 }
 
-.menu .row .menu-items .menu-item .link:hover
+.menu .row .link:hover
 {
    text-decoration: underline #ffff ;
 }
@@ -112,6 +163,114 @@ ul
     font-style: oblique;
     font-size: 25px;
     color: #ffff;
+}
+
+@media  screen and (max-width: 768px) 
+{
+    .menu .row .text-logo
+    {
+        padding-left: 5%;
+    }
+
+    .menu .row .menu-items
+    {
+        display: none;
+    }
+}
+
+@media  screen and (max-width: 320px) 
+{
+    .menu .row .text-logo
+    {
+        padding-left: 7%;
+    }
+}
+
+.menu .social-icons
+{
+    padding-left: 7rem;
+}
+
+@media  screen and (max-width: 768px) 
+{
+    .menu .social-icons
+    {
+        display: none;
+    }
+
+    .menu .social-icons
+    {
+        padding-left: 0;
+        margin: 0;
+    }
+}
+
+.menu .social-link i
+{
+   width: 35px;
+   height: 35px;
+   font-size: 25px;
+   color: #ffff;
+}
+
+.menu .social-link
+{
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.menu .social-link:hover
+{
+   background-color: var(--secondary);
+}
+
+.menu .menu-btn
+{
+    display: none;
+    margin-left: 43rem;
+    position: absolute;
+}
+
+.menu .menu-btn i
+{
+    font-size: 30px;
+    color: #ffff;
+}
+
+@media screen and (max-width: 768px)
+{
+    .menu .menu-btn
+    {
+        display: block;
+        margin-left: 45rem;
+    }
+}
+
+@media screen and (max-width: 425px) 
+{
+    .menu .menu-btn
+    {
+        margin-left: 25rem;
+    }
+}
+
+@media screen and (max-width: 375px) 
+{
+    .menu .menu-btn
+    {
+        margin-left: 22rem;
+    }
+}
+
+@media screen and (max-width: 320px)
+{
+    .menu .menu-btn
+    {
+        display: block;
+        margin-left: 18rem;
+    }
 }
 
 /* Header */
@@ -148,9 +307,17 @@ ul
 
 .header .intro-text
 {
-    left: 1rem;
+    padding-left: 3%;
     animation: slide-in 2s 1;
     position: relative;
+}
+
+@media screen and (max-width: 768px) 
+{
+    .header .intro-text
+    {
+       padding-right: 20%;
+    }
 }
 
 .header .intro .stat
@@ -161,10 +328,146 @@ ul
     position: relative;
 }
 
+@media screen and (max-width: 320px) 
+{
+    .header .intro .stat
+    {
+        display: none;
+    }
+}
+
 .header .intro .stat h4, .header .intro .stat p
 {
    color: #ffff;
    font-weight: bold;
+}
+
+.header .next
+{
+    left: 93%;
+}
+
+@media screen and (min-width: 2560px) 
+{
+    .header .next
+    {
+        left: 92%;
+    }
+}
+
+@media screen and (max-width: 768px) 
+{
+    .header .next
+    {
+        left: 90%;
+    }
+}
+
+@media screen and (max-width: 320px) 
+{
+    .header .next
+    {
+        left: 88%;
+    }
+}
+
+@media screen and (max-width: 425px) 
+{
+    .header .prev
+    {
+        left: -2%;
+    }
+}
+
+/* About Us */
+
+.about-us .row
+{
+  padding-top: 6%;
+  width: 100%;
+}
+
+.about-us .row  img
+{
+    width: 90%;
+    height: 90%;
+}
+
+.about-us .row .image
+{
+    width: 50%;
+    border: 0;
+    border-bottom: 3px;
+    border-color: var(--secondary);
+    border-style: solid;
+    border-radius: 4px;
+    position: relative;
+}
+
+.about-us h1
+{
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+}
+
+.about-us .row p
+{
+    color: var(--primary);
+    font-weight: 500;
+}
+
+.about-us .tabs .tab-btn
+{
+    background-color: #ffff;
+    color: var(--primary);
+    border-width: 0;
+    border-radius: 0;
+    width: 10%;
+}
+
+.about-us .tabs .tab-btn:focus
+{
+    background-color:  #ffff;
+    outline: none;
+    color: var(--primary);
+    border-bottom: 2px var(--primary);
+    border-style: solid;
+}
+
+.about-us .about-content div
+{
+    position: relative;
+}
+
+.about-us .about-content .content:nth-child(1)
+{
+    animation: slide-in 2s 1;
+}
+
+.about-us .about-content .content:nth-child(2)
+{
+    animation: slide-out 2s 1;
+}
+
+.about-us .about-content #services .row
+{
+    width: 15rem;
+    height: 12rem;
+    border-radius: 5px;
+    background-image: var(--gradient);
+}
+
+.about-us .about-content #services .row h2
+{
+    font-weight: bold;
+}
+
+.about-us .about-content #services .row .service-image
+{
+    height: 5rem;
+    width: 5rem;
 }
 
 /* KeyFrames */
@@ -178,7 +481,20 @@ ul
 
     to
     {
-        left: 1rem;
+        left: 0rem;
+    }   
+}
+
+@keyframes slide-out {
+
+    from
+    {
+        right: -40rem;
+    }
+
+    to
+    {
+        right: 0rem;
     }   
 }
 
@@ -192,5 +508,18 @@ ul
     to
     {
         bottom: 0;
+    }
+}
+
+@keyframes fade-in 
+{
+    from
+    {
+        opacity: 0;
+    }
+
+    to
+    {
+        visibility: visible;
     }
 }

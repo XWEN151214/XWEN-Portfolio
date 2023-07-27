@@ -20,6 +20,12 @@ function next_slide()
         slide_idx++;
         intro_arr[slide_idx].style.display = "block";
    }
+   else
+   {
+        intro_arr[slide_idx].style.display = "none";
+        slide_idx = 0;
+        intro_arr[slide_idx].style.display = "block";
+   }
 }
 
 function prev_slide()
@@ -28,6 +34,12 @@ function prev_slide()
    {
         intro_arr[slide_idx].style.display = "none";
         slide_idx--;
+        intro_arr[slide_idx].style.display = "block";
+   }
+   else
+   {
+        intro_arr[slide_idx].style.display = "none";
+        slide_idx = intro_arr.length - 1;
         intro_arr[slide_idx].style.display = "block";
    }
 }

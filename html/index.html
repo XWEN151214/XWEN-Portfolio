@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../css/main.css">
     <!-- Header -->
     <link rel = "icon" href = "../pictures/logo.png" type = "image/x-icon">
@@ -16,12 +17,12 @@
     <body>
         <section class="main">
             <!-- Main Menu -->
-            <div class="menu">
-                <div class="row d-flex align-items-center py-4 px-lg-5">
+            <div class="menu w-100">
+                <div class="row d-flex py-4 px-lg-5">
                     <!-- Logo -->
                     <!-- <img class="logo" src="../pictures/logo.png"> -->
-                    <h1 class="text-logo p-0">XWEN</h1>
-                    <ul class="menu-items d-flex align-items-center py-2">
+                    <h1 class="text-logo col-lg-1 py-1">XWEN</h1>
+                    <ul class="menu-items row py-2 mx-2">
                         <li class="menu-item mx-3"><a class="link" href=#>Home</a></li>
                         <li class="menu-item mx-3"><a class="link" href="#">About Us</a></li>
                         <li class="menu-item mx-3"><a class="link" href="#">Services</a></li>
@@ -29,9 +30,28 @@
                         <li class="menu-item mx-3"><a class="link" href="#">Our Story</a></li>
                         <li class="menu-item mx-3"><a class="link" href="#">Blogs</a></li>
                     </ul><!-- End Menu-Items -->
+                    <!-- Mobiile Menu -->
+                    <ul class="mobile-menu-items py-2" id="mobile-menu">
+                        <li class="menu-item p-1"><a class="link" href=#>Home</a></li>
+                        <li class="menu-item p-1"><a class="link" href="#">About Us</a></li>
+                        <li class="menu-item p-1"><a class="link" href="#">Services</a></li>
+                        <li class="menu-item p-1"><a class="link" href="#">Projects</a></li>
+                        <li class="menu-item p-1"><a class="link" href="#">Our Story</a></li>
+                        <li class="menu-item p-1"><a class="link" href="#">Blogs</a></li>
+                        <li class="menu-item d-flex align-items-center p-1 mt-2">
+                            <a class="social-link d-flex justify-content-center" href="#"><i class="fa fa-facebook mx-1 p-1"></i></a>
+                            <a class="social-link d-flex justify-content-center" href="#"><i class="fa fa-instagram mx-1 p-1"></i></a>
+                        </li>
+                    </ul><!-- End Mobile-menu-Items -->
+                    <!-- Hamburger Button -->
+                    <a class="menu-btn" href="#" id="ham-btn"><i class="fa fa-bars"></i></a>
+                    <div class="social-icons row py-2">
+                        <a class="social-link d-flex justify-content-center" href="#"><i class="fa fa-facebook mx-1 p-1"></i></a>
+                        <a class="social-link d-flex justify-content-center" href="#"><i class="fa fa-instagram mx-1 p-1"></i></a>
+                    </div>
                 </div><!-- End Row -->
             </div><!-- End Menu -->
-            <div class="header d-flex align-items-center">
+            <div class="header d-flex align-items-center w-100">
                 <div class="prev slider-control mx-2" id="prev"></div>
                 <div class="intro align-items-center">
                     <div class="intro-text col-lg-6">
@@ -70,7 +90,63 @@
                 </div><!-- End Intro -->
                 <div class="next slider-control mx-2" id="next"></div>
             </div><!-- End Header -->
-        </section>
+        </section><!-- End Main -->
+        <!-- About Us -->
+        <section class="about-us" id="about">
+            <div class="container-flex py-4 px-lg-5" id="main-h">
+                <h1 class="py-2">XWEN: Empowering Digital Solutions for Tomorrow's Success</h1>
+            </div><!-- End Container-Flex-->
+            <div class="tabs container d-flex justify-content-center align-items-center py-2">
+               <button class="tab-btn mx-2">INTRO</button>
+               <button class="tab-btn mx-2">JOURNEY</button>
+               <button class="tab-btn mx-2">SERVICES</button>
+               <button class="tab-btn mx-2">WHY US?</button>
+            </div><!-- End Tabs -->
+            <div class="about-content row">
+                <div class="content col-lg-6" id="profile-image">
+                    <img src="../pictures/computer1.png">
+                </div><!-- End Col-->
+                <div class="content col-lg-6" id="profile-text">
+                    <p class="py-2">
+                        Your gateway to innovative and transformative digital solutions.<br>At XWEN, we are passionate about harnessing the power of technology to empower businesses and individuals for a brighter future.<br>With a strong focus on excellence and a deep understanding of the ever-evolving digital landscape, we are committed to delivering exceptional services that drive success and growth.
+                    </p>
+                </div><!-- End Col-->
+            </div><!-- End Row -->
+            <div class="about-content row">
+                <div class="content col-lg-6">
+                    <img src="../pictures/road.png">
+                </div><!-- End Col-->
+                <div class="content col-lg-6">
+                    <p class="py-2">
+                        Since our inception, we have embarked on an exciting journey, collaborating with a diverse range of clients across various industries.<br>Our mission is to bridge the gap between creativity and functionality, seamlessly blending aesthetics with cutting-edge technologies.<br>As trailblazers in the digital realm, we continuously challenge ourselves to push the boundaries of possibility, delivering solutions that resonate with both our clients and their target audience.
+                    </p>
+                </div><!-- End Col-->
+            </div><!-- End Row -->
+            <div class="about-content row">
+                <div class="content row d-flex justify-content-center py-2" id="services">
+                    <div class="row d-flex justify-content-center mx-3">
+                        <img class="service-image" src="../pictures/web.png">
+                        <h2 class="text-center text-light py-2">Web Development</h2>
+                    </div><!-- End Row-->
+                    <div class="row d-flex justify-content-center mx-3">
+                        <img class="service-image" src="../pictures/ai.png">
+                        <h2 class="text-center text-light py-2">AI & Machine Learning</h2>
+                    </div><!-- End Row-->
+                    <div class="row d-flex justify-content-center mx-3">
+                        <img class="service-image" src="../pictures/ui.png">
+                        <h2 class="text-center text-light py-2">UI/UX Development</h2>
+                    </div><!-- End Row-->
+                    <div class="row d-flex justify-content-center mx-3 mt-3">
+                        <img class="service-image" src="../pictures/ecomm.png">
+                        <h2 class="text-center text-light py-2">E-Commerce Solutions</h2>
+                    </div><!-- End Row-->
+                    <div class="row d-flex justify-content-center mx-3 mt-3">
+                        <img class="service-image" src="../pictures/ui.png">
+                        <h2 class="text-center text-light py-2">Mobile App Development</h2>
+                    </div><!-- End Row-->
+                </div><!-- End Col-->
+            </div><!-- End Row -->
+        </section><!-- End About-Us -->
     </body>
 </html> 
 
@@ -80,4 +156,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
 <script src="../js/carousel.js"></script>
+<script src="../js/script.js"></script>
+<script src="../js/show_hide.js"></script>
