@@ -27,6 +27,7 @@ for(let i=0; i<tab_btn.length; i++)
             about_arr[idx].style.display = "none";
             tab_btn[idx].style.borderBottom = "none";
             about_arr[i].style.display = "flex";
+            tab_btn[i].style.borderBottom = "2px var(--primary) solid";
             idx = i;
         }
     )
