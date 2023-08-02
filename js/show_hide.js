@@ -1,6 +1,6 @@
-var about_arr = document.getElementsByClassName("about-content");
-var tab_btn = document.getElementsByClassName("tab-btn");
-var idx = 0;
+let about_arr = document.getElementsByClassName("about-content");
+let tab_btn = document.getElementsByClassName("tab-btn");
+let idx = 0;
 
 function hide()
 {

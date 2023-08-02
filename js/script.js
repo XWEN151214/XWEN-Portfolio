@@ -1,13 +1,13 @@
-// Global Variables
-var logo_header = document.getElementById("logo-head");
-var ham_btn = document.getElementById("ham-btn");
-var mob_menu = document.getElementById("mobile-menu");
-var isopen = false; 
-var main_h = document.getElementById("main-h");
-var service_arr = document.getElementsByClassName("service");
-var description_arr = document.getElementsByClassName("description");
-var service_text = document.getElementsByClassName("service-text");
-var service_phrase = 
+// Global variables
+let logo_header = document.getElementById("logo-head");
+let ham_btn = document.getElementById("ham-btn");
+let mob_menu = document.getElementById("mobile-menu");
+let isopen = false; 
+let main_h = document.getElementById("main-h");
+let service_arr = document.getElementsByClassName("service");
+let description_arr = document.getElementsByClassName("description");
+let service_text = document.getElementsByClassName("service-text");
+let service_phrase = 
 [
   "Piecing together bespoken web applications that are intuitive and user-friendly, designed to match your puzzle's unique pattern.",
   "Unlocking new puzzle-solving possibilities with artificial intelligence and machine learning integration.",
@@ -15,8 +15,8 @@ var service_phrase =
   "Constructing robust and scalable e-commerce platforms, connecting the pieces that drive business growth.",
   "Assembling cutting-edge mobile apps that fit seamlessly across platforms, creating an engaging user experience."
 ];
-var text_idx = 0;
-var hasleft;
+let text_idx = 0;
+let hasleft = false;
 
 function display_menu()
 {
@@ -66,13 +66,17 @@ function display_service()
         "mouseenter",
         function()
         {
-            hasleft = false;
-            setTimeout(function(){}, 2000);
-            description_arr[i].style.display = "block";
-            description_arr[i].style.animation = null
-            description_arr[i].offsetHeight;
-            description_arr[i].style.animation = "fade-in 1s 1";
-            type(service_phrase[i], service_text[i]);
+            setTimeout(
+                function()
+                {
+                    text_idx = 0;
+                    hasleft = false;
+                    description_arr[i].style.display = "block";
+                    description_arr[i].style.animation = null
+                    description_arr[i].offsetHeight;
+                    description_arr[i].style.animation = "fade-in 1s 1";
+                    type(service_phrase[i], service_text[i]);
+                }, 50);
         }
      )
    }
@@ -87,10 +91,10 @@ function hide_servcie()
          "mouseleave",
          function()
          {
+            text_idx = 0;
             hasleft = true;
             description_arr[i].style.display = "none";
-            service_text[i].innerHTML = "";
-            text_idx = 0;
+            service_text[i].innerHTML = null;
          }
       )
     }
@@ -98,7 +102,7 @@ function hide_servcie()
 
 function type(phrase, text)
 {
-    console.log(text_idx);
+    hide_servcie();
     if(text_idx < phrase.length && !hasleft)
     {
         text.innerHTML += phrase[text_idx];
@@ -112,13 +116,11 @@ function type(phrase, text)
     else
     {
         text_idx = 0;
-        return null;
     }
 }
 
 display_menu();
 display_service();
-hide_servcie();
 // document.addEventListener
 // (
 //     "scroll",
