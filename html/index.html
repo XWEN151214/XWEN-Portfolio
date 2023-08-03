@@ -77,6 +77,30 @@
                 <div class="next slider-control mx-2" id="next"></div>
             </div><!-- End Header -->
         </section><!-- End Main -->
+        <!-- Chat Bot -->
+        <section class="chatbot">
+            <div class="container">
+                <div class="chat-box" id="bot-box">
+                    <div class="col-lg-3 py-3" id="bot">
+                        <div class="bot-text container-flex">
+                            <p class="text-light py-2 px-2"> 
+                              Welcome to our website's interactive chatbot, your friendly and knowledgeable virtual assistant! 
+                            </p>
+                        </div>
+                        <div class="bot-text container-flex">
+                            <p class="text-light py-2 px-2">
+                                Lets talk business, what kind of website you are looking for?
+                            </p>
+                        </div>
+                    </div><!-- End Col -->
+                    <form class="chat-form py-2 px-2">
+                        <input class="py-2" type="text" id="msg" placeholder="type your message">
+                    </form><!-- End Chat-Form -->
+                    <button class="chat-submit mx-1" id="msg-submit" onclick="read_input()"><i class="fa fa-paper-plane py-1"></i></button>
+                </div><!-- End Chat-Box -->
+                <button class="chat-btn py-4" id="bot-btn"></button>
+            </div><!-- End Container -->
+        </section><!-- End ChatBot-->
         <!-- About Us -->
         <section class="about-us" id="about">
             <div class="container-flex py-4 px-lg-5" id="main-h">
@@ -108,7 +132,7 @@
                     </p>
                 </div><!-- End Col-->
             </div><!-- End Row -->
-            <div class="about-content row mt-4">
+            <div class="about-content row mt-4 py-2">
                 <div class="services content row d-flex justify-content-center py-2">
                     <div class="service row d-flex justify-content-center align-items-center mx-3">
                         <img class="service-image" src="../pictures/web.png">
@@ -190,7 +214,7 @@
                 </div><!-- End Why-Us -->
             </div><!-- End Row -->
         </section><!-- End About-Us -->
-    </body>
+    </body><!-- End Body -->
     <footer>
         <div class="footer-cover container-flex pt-4">
             <div class="container-flex">
@@ -201,20 +225,20 @@
                     <li class="py-2"><a class="link" href="#">Projects</a></li>
                     <li class="py-2"><a class="link" href="#">Blogs</a></li>
                   </ul>
-                </div>
+                </div><!-- End Row -->
                 <div class="row d-flex justify-content-center py-2">
                     <a class="social-link link d-flex justify-content-center py-2 mx-3" href="#"><i class="fa fa-facebook"></i></a>
                     <a class="social-link link d-flex justify-content-center py-2 mx-3" href="#"><i class="fa fa-instagram"></i></a>
                     <a class="social-link link d-flex justify-content-center py-2 mx-3" href="#"><i class="fa fa-linkedin"></i></a>
-                </div>
-            </div>
+                </div><!-- End Row -->
+            </div><!-- End Container-Flex -->
             <div class="closing container-flex w-100">
                 <div class="row d-flex justify-content-center py-3">
                    <h2 class="py-2">All Rights Reserved © XWEN</h2>
-                </div>
-            </div>
-        </div>
-    </footer>
+                </div><!-- End Row -->
+            </div><!-- End Closing -->
+        </div><!-- End Footer-Container -->
+    </footer><!-- End Footer -->
 </html> 
 
 <!-- JS -->
@@ -227,3 +251,4 @@
 <script src="../js/carousel.js"></script>
 <script src="../js/script.js"></script>
 <script src="../js/show_hide.js"></script>
+<script src="../js/chatbot.js"></script>
