@@ -17,6 +17,9 @@ let service_phrase =
 ];
 let text_idx = 0;
 let hasleft = false;
+let tech_img = document.getElementsByClassName("tech-img");
+let img_1 = document.getElementsByClassName("img-1");
+let img_2 = document.getElementsByClassName("img-2");
 
 function display_menu()
 {
@@ -63,7 +66,7 @@ function display_service()
    {
      service_arr[i].addEventListener
      (
-        "mouseenter",
+        "click",
         function()
         {
             setTimeout(
@@ -71,6 +74,7 @@ function display_service()
                 {
                     text_idx = 0;
                     hasleft = false;
+                    service_text[i].innerHTML = null;
                     description_arr[i].style.display = "block";
                     description_arr[i].style.animation = null
                     description_arr[i].offsetHeight;
@@ -94,7 +98,6 @@ function hide_servcie()
             text_idx = 0;
             hasleft = true;
             description_arr[i].style.display = "none";
-            service_text[i].innerHTML = null;
          }
       )
     }
@@ -119,8 +122,41 @@ function type(phrase, text)
     }
 }
 
+function move()
+{
+    let tech_img = document.getElementsByClassName("tech-img");
+    let img_1 = document.getElementsByClassName("img-1");
+    let img_2 = document.getElementsByClassName("img-2");
+    for(let i=0; i<tech_img.length; i++)
+    {
+        tech_img[i].addEventListener
+        (
+            "mouseenter",
+            function()
+            {
+                img_1[i].style.left = "-10px";
+                img_2[i].style.left = "10px";
+            }
+        )
+    }
+
+    for(let i=0; i<tech_img.length; i++)
+    {
+        tech_img[i].addEventListener
+        (
+            "mouseleave",
+            function()
+            {
+                img_1[i].style.left = "0";
+                img_2[i].style.left = "0";
+            }
+        )
+    }
+}
+
 display_menu();
 display_service();
+move();
 // document.addEventListener
 // (
 //     "scroll",
