@@ -20,6 +20,7 @@ let hasleft = false;
 let tech_img = document.getElementsByClassName("tech-img");
 let img_1 = document.getElementsByClassName("img-1");
 let img_2 = document.getElementsByClassName("img-2");
+let slider_img = document.getElementsByClassName("slider-img");
 
 function display_menu()
 {
@@ -122,41 +123,35 @@ function type(phrase, text)
     }
 }
 
-function move()
+function tech_ani()
 {
-    let tech_img = document.getElementsByClassName("tech-img");
-    let img_1 = document.getElementsByClassName("img-1");
-    let img_2 = document.getElementsByClassName("img-2");
-    for(let i=0; i<tech_img.length; i++)
+    slider_img[0].style.animation = null;
+    slider_img[0].offsetHeight;
+    slider_img[0].style.animation = "slide-in 1s 1";
+    for(let i=1; i<slider_img.length; i++)
     {
-        tech_img[i].addEventListener
-        (
-            "mouseenter",
-            function()
-            {
-                img_1[i].style.left = "-10px";
-                img_2[i].style.left = "10px";
-            }
-        )
+        slider_img[i].style.visibility = "hidden";
     }
-
-    for(let i=0; i<tech_img.length; i++)
+    for(let i=1; i<slider_img.length; i++)
     {
-        tech_img[i].addEventListener
+        slider_img[i - 1].addEventListener
         (
-            "mouseleave",
+            "animationend",
             function()
             {
-                img_1[i].style.left = "0";
-                img_2[i].style.left = "0";
+                slider_img[i].style.visibility = "visible";
+                slider_img[i].style.animation = null;
+                slider_img[i].offsetHeight;
+                slider_img[i].style.animation = "slide-in 1s 1";
             }
         )
     }
 }
 
+
 display_menu();
 display_service();
-move();
+tech_ani();
 // document.addEventListener
 // (
 //     "scroll",

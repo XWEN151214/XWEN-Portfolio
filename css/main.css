@@ -841,88 +841,56 @@ ul
 
 /* Techs */
 
-.techs .row
+.techs .slider
 {
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.techs .row .tech-img:nth-child(1)
+.techs .container-flex img
 {
+    width: 6rem;
+    height: 6rem;
     position: relative;
-    animation: slide-in 2s 1;
-    margin-right: 5%;
-    justify-content: right;
 }
 
-.techs .row .tech-img:nth-child(2)
+.techs h1
 {
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 20px;
     position: relative;
-    animation: slide-out 2s 1;
-    justify-content: left;
 }
 
 @media screen and (max-width: 2560px) and (min-width: 2060px)
 {
     .techs h1
     {
-       margin-left: 10%;
-    }
-
-    .techs .row .tech-img:nth-child(1)
-    {
-       margin-right: 8%;
+        margin-left: 10%;
     }
 }
 
-@media screen and (max-width: 768px) 
+@media screen and (max-width: 768px)
 {
-    .techs 
+    .techs h1
     {
-       margin-left: 3%;
+        margin-left: 3%;
+    }
+}
+
+@media screen and (max-width: 425px)
+{
+    .techs .slider
+    {
+        display: inline;
     }
 
-    .techs .row .tech-img:nth-child(1),
-    .techs .row .tech-img:nth-child(2)
-    {
-        justify-content: center;
-    }
-
-    .techs .row .tech-img
-    {
-        margin-top: 4%;
-    } 
     
-    .techs .row .tech-img:nth-child(1)
+    .techs .container-flex img
     {
-        margin-right: 0;
-    }  
-}
-
-.techs .tech-img img
-{
-    width: 10rem;
-    height: 10rem;
-    position: relative;
-}
-
-.techs h1
-{
-    color: var(--primary);
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.techs h1
-{
-    color: var(--primary);
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.techs .tech-text p
-{
-    color: #ffff;   
-    font-weight: 600; 
+        margin-top: 20%;
+    }
 }
 
 /* Footer */
@@ -1112,4 +1080,41 @@ footer .quick-links li .link
     }
 }
 
+@keyframes move-left 
+{
+   from
+   {
+     left: 0;
+   }
+   
+   to
+   {
+     left: -84px;
+   }
+}
 
+@keyframes move-right 
+{
+   from
+   {
+     left: 0;
+   }
+   
+   to
+   {
+     left: 120px;
+   }
+}
+
+@keyframes swipe 
+{
+    from
+    {
+        width: 0;
+    }
+
+    to
+    {
+        width: 20rem;
+    }
+}
