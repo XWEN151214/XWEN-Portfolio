@@ -85,6 +85,29 @@ ul
     width: 5rem;
 }
 
+::placeholder
+{
+   color: var(--primary);
+   font-weight: 500;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-style: oblique;
+}
+
+.btn
+{
+    outline: none;
+    border: 0;
+    background-color: var(--secondary);
+    color: var(--primary);
+    font-weight: 500;
+}
+
+.btn:hover
+{
+    background-color:var(--primary-light);
+    color: #ffff; 
+}
+
 /* Main */
 
 .main
@@ -321,6 +344,14 @@ ul
     padding-left: 3%;
 }
 
+@media screen and (max-width: 2560px) and (min-width: 2060px)
+{
+    .header .intro-text
+    {
+        padding-left: 10%;
+    }
+} 
+
 @media screen and (max-width: 768px) 
 {
     .header .intro-text
@@ -442,6 +473,11 @@ ul
 
 @media screen and (max-width: 425px)
 {
+    .chatbot
+    {
+        right: 0;
+    }
+    
     .chatbot .chat-box
     {
         width: 18rem;
@@ -456,7 +492,7 @@ ul
 }
 
 @media screen and (max-width: 375px)
-{
+{ 
     .chatbot .chat-form 
     {
        max-width: 75%;
@@ -542,7 +578,7 @@ ul
     outline: none;
     position: fixed;
     bottom: 0;
-    right: 5em;
+    right: 6em;
 }
 
 .chatbot .chat-submit i
@@ -685,6 +721,11 @@ ul
     top: 10px;
 }
 
+.about-us .about-content .why-us 
+{
+    padding-left: 10%;
+}
+
 .about-us .about-content .why-us .why-us-image
 {
     width: 20rem;
@@ -732,7 +773,7 @@ ul
 
     .about-us .about-content .content p
     {
-        padding-right: 20%;
+        padding-right: 30%;
         padding-left: 10%;
     }
 
@@ -883,14 +924,152 @@ ul
 {
     .techs .slider
     {
-        display: inline;
+        display: inline-block;
     }
 
+    .techs .slider .slider-img
+    {
+        display: inline;
+    }
     
     .techs .container-flex img
     {
-        margin-top: 20%;
+        margin-top: 10%;
     }
+}
+
+@media screen and (max-width: 375px)
+{
+    .techs .slider
+    {
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 320px)
+{
+    .techs .slider
+    {
+        margin-left: 0;
+    }
+}
+
+/* Contact Us */
+
+.contact .container-flex
+{
+    background-image: url(../pictures/cover1.jpg);
+    background-size: cover;
+}
+
+.contact .container-flex h3
+{
+    color: #ffff;
+    font-weight: bold;
+}
+
+.contact .container-flex h1
+{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.contact .container-flex .row 
+{
+    height: 100%;
+}
+
+.contact .cover
+{
+    background-color: #02353cea;
+}
+
+.contact .contact-info
+{
+    position: relative;
+    animation: slide-in 2s 1;
+}
+
+
+@media  screen and (max-width: 2560px)  and (min-width: 2060px)
+{
+    .contact .contact-info
+    {
+        padding-left: 10%;
+    }
+}
+
+@media  screen and (max-width: 768px)
+{
+    .contact .contact-info h1
+    { 
+       padding-left: 5%;
+    }
+}
+
+@media  screen and (max-width: 425px)
+{
+    .contact .contact-info h1
+    {
+        padding-left: 4%;
+    }
+}
+
+.contact .contact-box img
+{
+    width: 6rem;
+    height: 6rem;
+}
+
+.contact form input[type=text],
+.contact form input[type=email],
+.contact form input[type=number]
+{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    text-indent: 10px;
+    outline: none;
+    border: 2px var(--primary) solid;
+    color: var(--primary);
+}
+
+
+@media  screen and (max-width: 768px)
+{
+    .contact form 
+    {
+        padding-left: 3%;
+    }
+
+    .contact form input[type=text],
+    .contact form input[type=email],
+    .contact form input[type=number]
+    {
+        width: 80%;
+    }
+
+    .contact form textarea
+    {
+        width: 80%;
+    }
+}
+
+@media  screen and (max-width: 425px)
+{
+    .contact form 
+    {
+        padding-left: 0;
+    }
+}
+
+.contact form textarea
+{
+    border-radius: 10px;
+    text-indent: 10px;
+    outline: none;
+    border: 2px var(--primary) solid;
+    color: var(--primary);
 }
 
 /* Footer */
