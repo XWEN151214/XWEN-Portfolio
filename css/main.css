@@ -980,10 +980,10 @@ ul
     height: 100%;
 }
 
-/* .contact .cover
+.contact .cover
 {
-    background-color: #042241e0;
-} */
+    background-color: rgba(4, 35, 65, 0.541)
+}
 
 .contact .contact-info
 {
