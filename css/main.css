@@ -12,11 +12,11 @@ body
 
 :root
 {
-    --primary: #02353c;
-	--primary-light: #2eaf7d;
-	--secondary: #73ff70;
-    --tertiary: #055661;
-	--gradient: linear-gradient(to right,#2eaf7d, #02353c);
+    --primary: #04203D;
+	--primary-light: #2AD8DD;
+	--secondary: #084c94;
+    --tertiary: #12BCD8;
+	--gradient: linear-gradient(to right,#04203D, #084c94);
 }
 
 .link
@@ -48,7 +48,8 @@ ul
     box-shadow: 3px 3px 3px 3px #8d8c8c;
 }
 
-.slider-control {
+.slider-control 
+{
     position: absolute;
     cursor: pointer;
     z-index: 2;
@@ -97,14 +98,14 @@ ul
 {
     outline: none;
     border: 0;
-    background-color: var(--secondary);
+    background-color: var(--tertiary);
     color: var(--primary);
     font-weight: 500;
 }
 
 .btn:hover
 {
-    background-color:var(--primary-light);
+    background-color:var(--secondary);
     color: #ffff; 
 }
 
@@ -958,7 +959,7 @@ ul
 
 .contact .container-flex
 {
-    background-image: url(../pictures/cover1.jpg);
+    background-image: url(../pictures/cover1.png);
     background-size: cover;
 }
 
@@ -979,10 +980,10 @@ ul
     height: 100%;
 }
 
-.contact .cover
+/* .contact .cover
 {
-    background-color: #02353cea;
-}
+    background-color: #042241e0;
+} */
 
 .contact .contact-info
 {
@@ -1023,7 +1024,7 @@ ul
 
 .contact form input[type=text],
 .contact form input[type=email],
-.contact form input[type=number]
+.contact form input[type=tel]
 {
     width: 100%;
     height: 40px;
@@ -1044,7 +1045,7 @@ ul
 
     .contact form input[type=text],
     .contact form input[type=email],
-    .contact form input[type=number]
+    .contact form input[type=tel]
     {
         width: 80%;
     }
@@ -1072,6 +1073,38 @@ ul
     color: var(--primary);
 }
 
+/* Projects */
+
+.projects .project-control
+{
+    z-index: 9;
+}
+
+.projects .project-control i
+{
+    color: var(--primary);
+    font-size: 30px;
+}
+
+.projects #prev-project
+{
+    left: 1rem;
+}
+
+.projects #next-project
+{
+    right: 1rem;
+}
+
+.projects .project-box
+{
+    width: 20rem;
+    height: 15rem;
+    border: 2px var(--primary) solid;
+    display: flex;
+    position: relative;
+}
+
 /* Footer */
 footer
 {
@@ -1089,7 +1122,7 @@ footer .social-link i
 
 footer .social-link
 {
-    background-color: #2eaf7d;
+    background-color: var(--primary-light);
     width: 40px;
     border-radius: 100%;
     text-decoration: none;
@@ -1114,7 +1147,7 @@ footer .quick-links li .link
 
 .footer-cover
 {
-    background-color: #02353c9f;
+    background-color: #084c947a;
 }
 
 .footer-cover .container-flex:nth-child(1) .row:nth-child(1)
@@ -1295,5 +1328,18 @@ footer .quick-links li .link
     to
     {
         width: 20rem;
+    }
+}
+
+@keyframes slide-next 
+{
+    from
+    {
+        left: 0;
+    }
+    
+    to 
+    {
+        left: -100px;
     }
 }
