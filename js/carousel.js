@@ -20,7 +20,7 @@ function next_slide()
    {
         intro_arr[slide_idx].style.animation = null;
         intro_arr[slide_idx].offSetHeight;
-        intro_arr[slide_idx].style.animation = "fade-out 900ms 1";
+        intro_arr[slide_idx].style.animation = "fade-out 600ms 1";
         intro_arr[slide_idx].addEventListener
         (
             "animationend",
@@ -33,7 +33,7 @@ function next_slide()
                     intro_arr[slide_idx].style.display = "block";
                     intro_arr[slide_idx].style.animation = null;
                     intro_arr[slide_idx].offSetHeight;
-                    intro_arr[slide_idx].style.animation = "slide-in 2s 1";   
+                    intro_arr[slide_idx].style.animation = "slide-in 1s 1";   
                 }
             }
         ); 
@@ -46,7 +46,7 @@ function prev_slide()
    {
         intro_arr[slide_idx].style.animation = null;
         intro_arr[slide_idx].offSetHeight;
-        intro_arr[slide_idx].style.animation = "fade-out 900ms 1";
+        intro_arr[slide_idx].style.animation = "fade-out 600ms 1";
         intro_arr[slide_idx].addEventListener
         (
             "animationend",
@@ -59,7 +59,7 @@ function prev_slide()
                     intro_arr[slide_idx].style.display = "block";
                     intro_arr[slide_idx].style.animation = null;
                     intro_arr[slide_idx].offSetHeight;
-                    intro_arr[slide_idx].style.animation = "slide-in 2s 1";
+                    intro_arr[slide_idx].style.animation = "slide-in 1s 1";
                 }
             }
         ); 
