@@ -693,6 +693,7 @@ ul
 .about-us .about-content .services .row
 {
     width: 15rem;
+    max-width: 15rem;
     height: 10rem;
     border-radius: 5px;
     border-width: 3px;
@@ -886,7 +887,6 @@ ul
 
 @media screen and (max-width: 320px)
 {
-
     .about-us .about-content .content:nth-child(1)
     {
        padding-left: 10%;
