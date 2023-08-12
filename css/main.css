@@ -1171,6 +1171,40 @@ ul
     border: 2px var(--primary) solid;
     display: flex;
     position: relative;
+    background-image: url(../pictures/cover3.png);
+    background-repeat: no-repeat;
+    border: 0;
+}
+
+.projects .project-box p
+{
+    color: #ffff;
+}
+
+.projects .project-box .row
+{
+    background-color: var(--primary-light);
+    position: absolute;
+    width: 100%;
+    bottom: -10px;
+    border: 0;
+}
+
+.projects .project-box .row .cat
+{
+    position: relative;
+    left: 0;
+}
+
+.projects .project-box .row .time
+{
+    position: absolute;
+    right: 0;
+}
+
+.projects .project-box .row p
+{
+    color: var(--primary);
 }
 
 /* Footer */
