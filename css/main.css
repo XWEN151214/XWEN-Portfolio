@@ -303,33 +303,8 @@ ul
     .menu .menu-btn
     {
         display: block;
-        margin-left: 45rem;
+        right: 1rem;
         top: 3%;
-    }
-}
-
-@media screen and (max-width: 425px) 
-{
-    .menu .menu-btn
-    {
-        margin-left: 25rem;
-    }
-}
-
-@media screen and (max-width: 375px) 
-{
-    .menu .menu-btn
-    {
-        margin-left: 22rem;
-    }
-}
-
-@media screen and (max-width: 320px)
-{
-    .menu .menu-btn
-    {
-        display: block;
-        margin-left: 18rem;
     }
 }
 
@@ -1289,6 +1264,7 @@ ul
 {
     width: 20rem;
     height: 15rem;
+    background-color: var(--secondary);
     border: 2px var(--primary) solid;
     display: flex;
     position: relative;
@@ -1548,12 +1524,7 @@ footer .quick-links li .link
 {
     from
     {
-        top: -10rem;
-    }
-
-    to
-    {
-        top: auto;
+        height: 0;
     }
 }
 

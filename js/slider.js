@@ -72,24 +72,6 @@ function slide_next()
     }
 }
 
-function set_transition(currrent_ani)
-{
-    if(currrent_ani < project_box.length - 1)
-    {
-        console.log(currrent_ani);
-        project_box[currrent_ani].style.animation = "slide-next 1s 1";
-        project_box[currrent_ani].addEventListener
-        (
-            "animationend",
-            function()
-            {
-                currrent_ani++;
-                set_transition(currrent_ani);
-            }
-        )
-    }
-}
-
 function slide_prev()
 {
     if(first == project_box.length - 2)
@@ -135,7 +117,7 @@ function flip_ani()
                 {
                     project_img[i].style.display = "none";
                     project_cover[i].style.display = "block";
-                    project_cover[i].style.animation = "flip 1s 1";
+                    project_cover[i].style.animation = "slide-down 1s 1";
                     project_cover[i].addEventListener
                     (
                         "animationend",
@@ -155,7 +137,7 @@ function flip_ani()
             {
                 if(project_box[i] === slide_project[mid])
                 {
-                    project_img[i].style.animation = "flip-back 1s 1";
+                    project_img[i].style.animation = "slide-down 1s 1";
                     project_img[i].style.display = "block"; 
                     project_cover[i].style.display = "none";
                     project_content[i].style.display = "none"; 

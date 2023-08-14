@@ -20,34 +20,30 @@
             <div class="menu w-100">
                 <div class="row d-flex align-items-center py-4 px-lg-5">
                     <!-- Logo -->
-                    <img class="logo" src="../pictures/logo-white.png">
+                    <img class="logo" src="../pictures/logo-white.png" alt="logo">
                     <!-- <h1 class="text-logo col-lg-1 py-1">XWEN</h1> -->
                     <ul class="menu-items row py-2 mx-2">
-                        <li class="menu-item mx-3"><a class="link" href=#>Home</a></li>
-                        <li class="menu-item mx-3"><a class="link" href="#">About Us</a></li>
-                        <li class="menu-item mx-3"><a class="link" href="#">Services</a></li>
-                        <li class="menu-item mx-3"><a class="link" href="#">Projects</a></li>
-                        <li class="menu-item mx-3"><a class="link" href="#">Our Story</a></li>
-                        <li class="menu-item mx-3"><a class="link" href="#">Blogs</a></li>
+                        <li class="menu-item mx-3"><a title="home" class="link" href=#>Home</a></li>
+                        <li class="menu-item mx-3"><a title="about" class="link" href="#about">About Us</a></li>
+                        <li class="menu-item mx-3"><a title="projects" class="link" href="#">Projects</a></li>
+                        <li class="menu-item mx-3"><a title="Our story" class="link" href="#">Our Story</a></li>
                     </ul><!-- End Menu-Items -->
                     <!-- Mobiile Menu -->
                     <ul class="mobile-menu-items py-2" id="mobile-menu">
-                        <li class="menu-item p-1"><a class="link" href=#>Home</a></li>
-                        <li class="menu-item p-1"><a class="link" href="#">About Us</a></li>
-                        <li class="menu-item p-1"><a class="link" href="#">Services</a></li>
-                        <li class="menu-item p-1"><a class="link" href="#">Projects</a></li>
-                        <li class="menu-item p-1"><a class="link" href="#">Our Story</a></li>
-                        <li class="menu-item p-1"><a class="link" href="#">Blogs</a></li>
+                        <li class="menu-item p-1"><a title="home" class="link" href=#>Home</a></li>
+                        <li class="menu-item p-1"><a title="about" class="link" href="#about">About Us</a></li>
+                        <li class="menu-item p-1"><a title="projects" class="link" href="#">Projects</a></li>
+                        <li class="menu-item p-1"><a title="Our story" class="link" href="#">Our Story</a></li>
                         <li class="menu-item d-flex align-items-center p-1 mt-2">
-                            <a class="social-link d-flex justify-content-center" href="#"><i class="fa fa-facebook mx-1 p-1"></i></a>
-                            <a class="social-link d-flex justify-content-center" href="#"><i class="fa fa-instagram mx-1 p-1"></i></a>
+                            <a title="fb" class="social-link d-flex justify-content-center" href="#"><i class="fa fa-facebook mx-1 p-1"></i></a>
+                            <a title="inst" class="social-link d-flex justify-content-center" href="#"><i class="fa fa-instagram mx-1 p-1"></i></a>
                         </li>
                     </ul><!-- End Mobile-menu-Items -->
                     <!-- Hamburger Button -->
-                    <a class="menu-btn" href="#" id="ham-btn"><i class="fa fa-bars"></i></a>
+                    <a title="menu-button" class="menu-btn" href="#" id="ham-btn"><i class="fa fa-bars"></i></a>
                     <div class="social-icons row py-2">
-                        <a class="social-link d-flex justify-content-center" href="#"><i class="fa fa-facebook mx-1 p-1"></i></a>
-                        <a class="social-link d-flex justify-content-center" href="#"><i class="fa fa-instagram mx-1 p-1"></i></a>
+                        <a title="fb" class="social-link d-flex justify-content-center" href="#"><i class="fa fa-facebook mx-1 p-1"></i></a>
+                        <a title="inst" class="social-link d-flex justify-content-center" href="#"><i class="fa fa-instagram mx-1 p-1"></i></a>
                     </div>
                 </div><!-- End Row -->
             </div><!-- End Menu -->
@@ -64,14 +60,12 @@
                     <div class="intro-text col-lg-7">
                         <h3 class="py-2">The New Era of AI</h3>
                         <h2 class="py-2">We recognize that AI has ushered in a transformative era, becoming an indispensable element in crafting cutting-edge web applications.</h2>
-                        <h2 class="py-2">Our team of reliable and proficient developers excels at seamlessly integrating your AI models into any application, giving it life and functionality.</h2>
                     </div><!-- End Intro-Text -->
                 </div><!-- End Intro -->
                 <div class="intro align-items-center">
                     <div class="intro-text col-lg-7">
                         <h3 class="py-2">Our Team</h3>
                         <h2 class="py-2">With a passion for crafting captivating digital experiences, our skilled developers bring expertise, innovation, and creativity to every project they touch.</h2>
-                        <h2 class="py-2">We build cutting-edge solutions that empower businesses to thrive in the digital landscape. Collaborating seamlessly, our developers work in tandem to turn ideas into reality.</h2>
                     </div><!-- End Intro-Text -->
                 </div><!-- End Intro -->
                 <div class="next slider-control mx-2" id="next"></div>
@@ -96,9 +90,9 @@
                     <form class="chat-form py-2 px-2">
                         <input class="py-2" type="text" id="msg" placeholder="type your message">
                     </form><!-- End Chat-Form -->
-                    <button class="chat-submit mx-2" id="msg-submit" onclick="read_input()"><i class="fa fa-paper-plane py-1"></i></button>
+                    <button class="chat-submit mx-2" title="submit" id="msg-submit" onclick="read_input()"><i class="fa fa-paper-plane py-1"></i></button>
                 </div><!-- End Chat-Box -->
-                <button class="chat-btn py-4" id="bot-btn"></button>
+                <button class="chat-btn py-4" title="chatbot" id="bot-btn"></button>
             </div><!-- End Container -->
         </section><!-- End ChatBot-->
         <!-- About Us -->
@@ -114,7 +108,7 @@
             </div><!-- End Tabs -->
             <div class="about-content row">
                 <div class="content col-lg-6" id="profile-image">
-                    <img class="image" src="../gifs/puzzle.gif">
+                    <img class="image" src="../gifs/puzzle.gif" alt="puzzle">
                 </div><!-- End Col-->
                 <div class="content col-lg-6" id="profile-text">
                     <p class="py-2">
@@ -124,7 +118,7 @@
             </div><!-- End Row -->
             <div class="about-content row mt-4">
                 <div class="content col-lg-6">
-                    <img class="journey-image" src="../pictures/journey1.png">
+                    <img class="journey-image" src="../pictures/journey1.png" alt="journey">
                 </div><!-- End Col-->
                 <div class="content col-lg-6">
                     <p class="py-2 d-flex align-items-center">
@@ -135,21 +129,21 @@
             <div class="about-content row mt-4 py-2">
                 <div class="services content row d-flex justify-content-center py-2">
                     <div class="service row d-flex justify-content-center align-items-center mx-3">
-                        <img class="service-image" src="../pictures/web.png">
+                        <img class="service-image" src="../pictures/web.png" alt="web">
                         <h2 class="text-center py-2">Website Development</h2>
                         <div class="description container-flex py-2">
                             <h3 class="service-text text-light py-2 px-3"></h3>
                         </div><!-- End Description -->
                     </div><!-- End Row-->
                     <div class="service row d-flex justify-content-center align-items-center mx-3">
-                        <img class="service-image" src="../pictures/ai.png">
+                        <img class="service-image" src="../pictures/ai.png" alt="ai">
                         <h2 class="text-center py-2">AI & Machine Learning</h2>
                         <div class="description container-flex py-2">
                             <h3 class="service-text text-light py-2 px-3"></h3>
                         </div><!-- End Description -->
                     </div><!-- End Row-->
                     <div class="service row d-flex justify-content-center align-items-center mx-3">
-                        <img class="service-image" src="../pictures/ui.png">
+                        <img class="service-image" src="../pictures/ui.png" alt="ui">
                         <h2 class="text-center py-2">UI/UX Development</h2>
                         <div class="description container-flex py-2">
                             <h3 class="service-text text-light py-2 px-3"></h3>
@@ -158,14 +152,14 @@
                 </div><!-- End Row-->
                 <div class="services content row d-flex justify-content-center">
                     <div class="service row d-flex justify-content-center align-items-center mx-3 mt-5">
-                        <img class="service-image" src="../pictures/ecomm.png">
+                        <img class="service-image" src="../pictures/ecomm.png" alt="ecomm">
                         <h2 class="text-center py-2">E-Commerce Solutions</h2>
                         <div class="description container-flex py-2">
                             <h3 class="service-text text-light py-2 px-3"></h3>
                         </div><!-- End Description -->
                     </div><!-- End Row-->
                     <div class="service row d-flex justify-content-center align-items-center mx-3 mt-5">
-                        <img class="service-image" src="../pictures/mobile.png">
+                        <img class="service-image" src="../pictures/mobile.png" alt="mobile">
                         <h2 class="text-center py-2">Mobile App Development</h2>
                         <div class="description container-flex py-2">
                             <h3 class="service-text text-light py-2 px-3"></h3>
@@ -181,7 +175,7 @@
                             <p class="py-2">Just as puzzles come to life through the creator's vision, we prioritize your goals and requirements. Our customer-centric approach ensures solutions tailored to your puzzle's unique shape.</p>
                         </div>
                         <div class="col-lg-4 d-flex justify-content-center">
-                            <img class="why-us-image" src="../pictures/handshake.png">
+                            <img class="why-us-image" src="../pictures/handshake.png" alt="handshake">
                         </div>
                     </div><!-- End Row -->
                     <div class="row d-flex justify-content-center align-items-center">
@@ -190,7 +184,7 @@
                             <p class="py-2">We embrace technology like puzzle enthusiasts embrace challenges. From AI and machine learning to blockchain, we revel in the ever-changing digital puzzle landscape.</p>
                         </div>
                         <div class="col-lg-4 d-flex justify-content-center">
-                           <img class="why-us-image" src="../pictures/tech.png">
+                           <img class="why-us-image" src="../pictures/tech.png" alt="tech">
                         </div>
                     </div><!-- End Row -->
                     <div class="row d-flex justify-content-center align-items-center">
@@ -199,7 +193,7 @@
                             <p class="py-2">Like an artist paints a masterpiece, we infuse creativity into every solution. Our out-of-the-box thinking crafts digital experiences that captivate and delight.</p>
                         </div>
                         <div class="col-lg-4 d-flex justify-content-center">
-                            <img class="why-us-image" src="../pictures/creativity.png">
+                            <img class="why-us-image" src="../pictures/creativity.png" alt="creativity">
                         </div>
                     </div><!-- End Row -->
                     <div class="row d-flex justify-content-center align-items-center">
@@ -208,7 +202,7 @@
                             <p class="py-2">Solving puzzles demands precision, and that's what we bring to every project. Our meticulous attention to detail ensures reliable and polished results.</p>
                         </div>
                         <div class="col-lg-4 d-flex justify-content-center">
-                            <img class="why-us-image" src="../pictures/precision.png">
+                            <img class="why-us-image" src="../pictures/precision.png" alt="precision">
                         </div>
                     </div><!-- End Row -->
                 </div><!-- End Why-Us -->
@@ -219,22 +213,22 @@
            <div class="container-flex d-flex justify-content-center py-4 w-100">
              <div class="slider container-flex py-2">
                 <div class="slider-img col-lg-2">
-                    <img src="../pictures/django.png">
+                    <img src="../pictures/django.png" alt="django">
                 </div>
                 <div class="slider-img col-lg-2">
-                    <img src="../pictures/python.png">
+                    <img src="../pictures/python.png" alt="python">
                 </div>
                 <div class="slider-img col-lg-2">
-                    <img src="../pictures/node.png">
+                    <img src="../pictures/node.png" alt="node">
                 </div>
                 <div class="slider-img col-lg-2">
-                    <img src="../pictures/react.png">
+                    <img src="../pictures/react.png" alt="react">
                 </div>
                 <div class="slider-img col-lg-2">
-                    <img src="../pictures/html.png">
+                    <img src="../pictures/html.png" alt="html">
                 </div>
                 <div class="slider-img col-lg-2">
-                    <img src="../pictures/css.png">
+                    <img src="../pictures/css.png" alt="css">
                 </div>
              </div><!-- End Slider -->
            </div><!-- End Container-FLex -->
@@ -294,40 +288,40 @@
         <section class="projects mt-4">
             <h1 class="text-center py-2 px-lg-5">Recent Projects</h1>
             <div class="slider container-flex d-flex align-items-center mt-4 py-4">
-                <a class="slider-control project-control" id="prev-project"><i class="fa fa-angle-double-left"></i></a>
+                <a title="next" class="slider-control project-control" id="prev-project"><i class="fa fa-angle-double-left"></i></a>
                 <div class="project-box row align-items-center py-2">
-                    <img class="project-img" src="../projects/oracle.jpg">
-                    <img class="project-cover" src="../pictures/cover3.png">
+                    <img class="project-img" src="../projects/oracle.jpg" alt="oracle">
+                    <img class="project-cover" src="../pictures/cover3.png" alt="cover">
                     <div class="project-content col-lg-15">
                         <h4 class="py-2 px-2">Oracle DB</h4>
                         <p class="p-0 m-0 px-2">Accessing oracle DB and retreiving data to insert into koha API</p>
                     </div>
                 </div><!-- End Project-Box -->
                 <div class="project-box row align-items-center py-2">
-                    <img class="project-img" src="../projects/tibco.png">
-                    <img class="project-cover" src="../pictures/cover3.png">
+                    <img class="project-img" src="../projects/tibco.png" alt="tibco">
+                    <img class="project-cover" src="../pictures/cover3.png" alt="cover">
                     <div class="project-content col-lg-15">
                         <h4 class="py-2 px-2">Jasper Reports</h4>
                         <p class="p-0 m-0 px-2">An interactive application to publish reports in JR server</p>
                     </div>
                 </div><!-- End Project-Box -->
                 <div class="project-box row align-items-center py-2">
-                    <img class="project-img" src="../projects/bsk.jpeg">
-                    <img class="project-cover" src="../pictures/cover3.png">
+                    <img class="project-img" src="../projects/bsk.jpeg" alt="bsk">
+                    <img class="project-cover" src="../pictures/cover3.png" alt="cover">
                     <div class="project-content col-lg-15">
                         <h4 class="py-2 px-2">BSK</h4>
                         <p class="p-0 m-0 px-2">A portfolio website to showcase BSK's technical experties</p>
                     </div>
                 </div><!-- End Project-Box -->
                 <div class="project-box row align-items-center py-2">
-                    <img class="project-img" src="../projects/zeenia.jpg">
-                    <img class="project-cover" src="../pictures/cover3.png">
+                    <img class="project-img" src="../projects/zeenia.jpg" alt="zeenia">
+                    <img class="project-cover" src="../pictures/cover3.png" alt="cover">
                     <div class="project-content col-lg-15">
                         <h4 class="py-2 px-2">Zeenia Travels</h4>
                         <p class="p-0 m-0 px-2">A touring agent helping you thorugh every step</p>
                     </div>
                 </div><!-- End Project-Box -->
-                <a class="slider-control project-control" id="next-project"><i class="fa fa-angle-double-right"></i></a>
+                <a title="next" class="slider-control project-control" id="next-project"><i class="fa fa-angle-double-right"></i></a>
             </div><!-- End Slider -->
         </section><!-- End Project -->
     </body><!-- End Body -->
@@ -336,16 +330,16 @@
             <div class="container-flex">
                 <div class="row d-flex justify-content-center align-items-center">
                   <ul class="quick-links d-flex justify-content-center">
-                    <li class="py-2"><a class="link" href="#">Home</a></li>
-                    <li class="py-2"><a class="link" href="#">About Us</a></li>
-                    <li class="py-2"><a class="link" href="#">Projects</a></li>
-                    <li class="py-2"><a class="link" href="#">Blogs</a></li>
+                    <li class="py-2"><a title="home" class="link" href="#">Home</a></li>
+                    <li class="py-2"><a title="about" class="link" href="#">About Us</a></li>
+                    <li class="py-2"><a title="projects" class="link" href="#">Projects</a></li>
+                    <li class="py-2"><a title="blogs" class="link" href="#">Blogs</a></li>
                   </ul>
                 </div><!-- End Row -->
                 <div class="row d-flex justify-content-center py-2">
-                    <a class="social-link link d-flex justify-content-center py-2 mx-3" href="#"><i class="fa fa-facebook"></i></a>
-                    <a class="social-link link d-flex justify-content-center py-2 mx-3" href="#"><i class="fa fa-instagram"></i></a>
-                    <a class="social-link link d-flex justify-content-center py-2 mx-3" href="#"><i class="fa fa-linkedin"></i></a>
+                    <a title="fb" class="social-link link d-flex justify-content-center py-2 mx-3" href="#"><i class="fa fa-facebook"></i></a>
+                    <a title="inst" class="social-link link d-flex justify-content-center py-2 mx-3" href="#"><i class="fa fa-instagram"></i></a>
+                    <a title="lind" class="social-link link d-flex justify-content-center py-2 mx-3" href="#"><i class="fa fa-linkedin"></i></a>
                 </div><!-- End Row -->
             </div><!-- End Container-Flex -->
             <div class="closing container-flex w-100">

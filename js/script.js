@@ -148,7 +148,6 @@ function tech_ani()
     }
 }
 
-
 display_menu();
 display_service();
 tech_ani();
