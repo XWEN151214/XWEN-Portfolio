@@ -52,12 +52,12 @@ function is_scrolled_in(ele)
     let elem_rect = ele.getBoundingClientRect();
     let top = elem_rect.top;
     let bottom = elem_rect.bottom;
-    return ((top >=0) && (bottom < window.innerHeight));
+    return ((bottom > window.innerHeight)) ;
 }
 
 function start_ani(ele, css_ani)
 {
-    if(is_scrolled_in(ele))
+    if(scroll_y > (ele.offsetTop - wh))
     {
        ele.style.animation = null;
        ele.offsetHeight;
@@ -129,26 +129,29 @@ function type(phrase, text)
 
 function tech_ani()
 {
-    slider_img[0].style.animation = null;
-    slider_img[0].offsetHeight;
-    slider_img[0].style.animation = "slide-in 1s 1";
-    for(let i=1; i<slider_img.length; i++)
+    if(is_scrolled_in(slider_img[0]))
     {
-        slider_img[i].style.visibility = "hidden";
-    }
-    for(let i=1; i<slider_img.length; i++)
-    {
-        slider_img[i - 1].addEventListener
-        (
-            "animationend",
-            function()
-            {
-                slider_img[i].style.visibility = "visible";
-                slider_img[i].style.animation = null;
-                slider_img[i].offsetHeight;
-                slider_img[i].style.animation = "slide-in 1s 1";
-            }
-        )
+        slider_img[0].style.animation = null;
+        slider_img[0].offsetHeight;
+        slider_img[0].style.animation = "slide-in 1s 1";
+        for(let i=1; i<slider_img.length; i++)
+        {
+            slider_img[i].style.visibility = "hidden";
+        }
+        for(let i=1; i<slider_img.length; i++)
+        {
+            slider_img[i - 1].addEventListener
+            (
+                "animationend",
+                function()
+                {
+                    slider_img[i].style.visibility = "visible";
+                    slider_img[i].style.animation = null;
+                    slider_img[i].offsetHeight;
+                    slider_img[i].style.animation = "slide-in 1s 1";
+                }
+            )
+        }
     }
 }
 
@@ -168,6 +171,9 @@ function show_project()
                     {
                         if(j != i)
                         {
+                            project_detail[j].style.display = "none";
+                            start_ani(project_arrow[j], "rotate-up 0.5s 1");
+                            project_arrow[j].style.transform = "scale(1)";
                             project_box[j].style.maxHeight = "18rem";
                         }
                     }
