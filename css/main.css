@@ -497,6 +497,12 @@ ul
     {
        max-width: 64%;
     }
+
+    .chatbot .chat-submit
+    {
+        padding-right: 0;
+        padding-left: 3%;
+    }
 }
 
 @media screen and (max-width: 375px)
@@ -505,24 +511,29 @@ ul
     {
        max-width: 75%;
     }
+
+    .chatbot .chat-submit
+    {
+        padding-left: 5%;
+    }
 }
 
 @media screen and (max-width: 320px)
 {
     .chatbot .chat-box
     {
-        width: 14rem;
+        width: 15rem;
         height: 24rem;
     }
 
     .chatbot .chat-form 
     {
-       max-width: 65%;
+       max-width: 75%;
     }
 
     .chatbot .chat-submit
     {
-        padding-left: 5%;
+        padding-left: 20%;
     }
 }
 

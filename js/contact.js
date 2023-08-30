@@ -12,7 +12,9 @@ function send_form()
     }
     else
     {
-        window.open(`mailto:xwen151214@gmail.com?subject=Contact Form Submission&body=${msg}`);
+        window.open(`mailto:xwen151214@gmail.com?subject=
+        Contact Form Submission&body=Name: ${form_name}\nEmail: ${form_email}\n
+        Number: ${form_number}\nMessage: ${msg}`);
     }
 }
 

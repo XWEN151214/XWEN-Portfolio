@@ -3,6 +3,7 @@ let chat_box = document.getElementById("bot-box");
 let bot = document.getElementById("bot");
 let bot_text = document.getElementsByClassName("bot-text");
 let msg = document.getElementById("msg");
+let ans_no = 0;
 let bot_isopen = false;
 let bot_idx = 0;
 
@@ -49,9 +50,75 @@ function read_input()
                                 <p class="text-light py-2 px-2">
                                 ${msg.value}
                                 </p>
-                           </div>`
+                          </div>`
+        chat_ai(msg);
         msg.value = null;
-            }
+    }
+}
+
+function answer(msg)
+{
+    setTimeout
+        (
+            ()=>
+            {
+                bot.innerHTML += 
+                `<div class="bot-text ans container-flex">
+                    <p class="text-light py-2 px-2"> 
+                      ${msg}
+                    </p>
+                </div>`
+            },
+            1000
+        );
+}
+
+function chat_ai(msg)
+{
+    if(msg.value.includes('ai') || msg.value.includes('Ai') 
+    || msg.value.includes('model integration'))
+    {
+        answer(
+                ` Great! contact us through our contact form<br>
+                   we will be happy to help. Lets talk about it.`
+              );
+    }
+    else if(msg.value.includes('api') || msg.value.includes('backend'))
+    {
+        answer(
+                `We have vast experience working with apis and complex backends<br>
+                read about our project on the oracle database. It will be a delight for us to <br>
+                work with you.`
+              );
+    }
+    else if(msg.value.includes('ecommerce') || msg.value.includes('Ecommerce') 
+    || msg.value.includes('Ecomm') || msg.value.includes('ecomm'))
+    {
+        answer(
+                `Ok an ecommerce store can be very easy to setup using technologies like 
+                <br> Django or NodeJS, Contact us and we can start working on it right away.`
+              );
+    }
+    else if(msg.value.includes('website'))
+    {
+        answer(
+                `Allright great checkout our project on zeeniatravels<br>
+                <a href=https://zeeniatravels.com/>Link</a>`
+              );
+    }
+    else if(msg.value.includes('mobile') || msg.value.includes('android') || msg.value.includes('ios'))
+    {
+        answer(
+                ` Sorry! we are still working on mobile development.<br>
+                it will start soon.`
+              );
+    }
+    else
+    {
+        answer(
+                 `Sorry! I do not understand.`
+              );
+    } 
 }
 
 chat_btn.addEventListener
