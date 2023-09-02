@@ -34,15 +34,15 @@
                         <li class="menu-item p-1"><a title="projects" class="link" href="#">Projects</a></li>
                         <li class="menu-item p-1"><a title="Our story" class="link" href="#">Our Story</a></li>
                         <li class="menu-item d-flex align-items-center p-1 mt-2">
-                            <a title="fb" class="social-link d-flex justify-content-center" href="https://www.facebook.com/people/XWEN/61550094961337/"><i class="fa fa-facebook mx-1 p-1"></i></a>
-                            <a title="inst" class="social-link d-flex justify-content-center" href="https://instagram.com/xwen__official?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D"><i class="fa fa-instagram mx-1 p-1"></i></a>
+                            <a title="fb" class="social-link d-flex justify-content-center" href="https://www.facebook.com/people/XWEN/61550094961337/" target="_blank"><i class="fa fa-facebook mx-1 p-1"></i></a>
+                            <a title="inst" class="social-link d-flex justify-content-center" href="https://instagram.com/xwen__official?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D" target="_blank"><i class="fa fa-instagram mx-1 p-1"></i></a>
                         </li>
                     </ul><!-- End Mobile-menu-Items -->
                     <!-- Hamburger Button -->
                     <a title="menu-button" class="menu-btn" href="#" id="ham-btn"><i class="fa fa-bars"></i></a>
                     <div class="social-icons row py-2">
-                        <a title="fb" class="social-link d-flex justify-content-center" href="https://www.facebook.com/people/XWEN/61550094961337/"><i class="fa fa-facebook mx-1 p-1"></i></a>
-                        <a title="inst" class="social-link d-flex justify-content-center" href="https://instagram.com/xwen__official?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D"><i class="fa fa-instagram mx-1 p-1"></i></a>
+                        <a title="fb" class="social-link d-flex justify-content-center" href="https://www.facebook.com/people/XWEN/61550094961337/" target="_blank"><i class="fa fa-facebook mx-1 p-1"></i></a>
+                        <a title="inst" class="social-link d-flex justify-content-center" href="https://instagram.com/xwen__official?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D" target="_blank"><i class="fa fa-instagram mx-1 p-1"></i></a>
                     </div>
                 </div><!-- End Row -->
             </div><!-- End Menu -->
@@ -234,136 +234,170 @@
         </section><!-- End Techs-->
         <section class="projects" id="projects">
             <h1 class="py-4 px-lg-5">Our Projects</h1>
-            <div class="container">
-                <div class="row d-flex justify-content-center">
-                    <div class="project-box container" id="project-1">
-                        <img class="project-img" src="../projects/tibco.png">
-                        <div class="project-toggle col-lg-12">
-                            <button class="porject-btn py-2"><i class="project-arrow fa fa-arrow-up"></i></button>
+            <div class="project row d-flex justify-content-center align-items-center">
+                <div class="project-techs d-flex justify-content-center align-items-center">
+                    <div class="row d-flex justify-content-center">
+                        <img class="mx-2" src="../pictures/html.png">
+                        <img class="mx-2" src="../pictures/css.png">
+                    </div>
+                </div>
+                <div class="project-box container d-flex justify-content-center align-items-center py-4">
+                    <div class="project-img col-lg-6">
+                        <img class="project-image" src="../projects/tibco.png">
+                    </div>
+                    <div class="project-details col-lg-6">
+                        <h3 class="py-2">Jasper Reports Module</h3>
+                        <p class="py-2">
+                            A simple module allowing multiple users to execute reports and view them directly from their server.<br>
+                            The module handles authentication and routing making it easier for the end user to access jaspersoft software.  
+                        </p>
+                        <div class="status d-flex col-lg-12 p-0">
+                            <div class="col-lg-6 p-0">
+                                <h3 class="py-2">Category:</h3>
+                                <p class="py-1">Web Dev: Module</p>
+                            </div>
                         </div>
-                        <div class="project-detail col-lg-12">
-                            <h3 class="py-2">Jasper Reports Module</h3>
-                            <p class="py-2">
-                                A simple module allowing multiple users to execute reports and view them directly from their server.<br>
-                                The module handles authentication and routing making it easier for the end user to access jaspersoft software.  
-                            </p>
-                            <h3 class="py-2">Category:</h3>
-                            <p class="py-1">Web Dev: Module</p>
-                            <h3 class="py-2">Status:</h3>
-                            <p class="py-1">Completed</p>
-                            <h3 class="py-2">Techs:</h3>
-                            <p class="py-1">HTML, CSS</p>
-                            <h3 class="py-2">Link:</h3>
-                            <p class="py-1">Unavailable</p>
+                    </div>
+                </div><!-- End Project-Box -->
+            </div><!-- End Row -->
+            <div class="project row d-flex justify-content-center align-items-center py-3">
+                <div class="project-techs d-flex justify-content-center align-items-center">
+                    <div class="row d-flex justify-content-center">
+                        <img class="mx-2" src="../pictures/node-fill.png">
+                        <img class="mx-2" src="../pictures/html.png">
+                        <img class="mx-2" src="../pictures/css.png">
+                    </div>
+                </div>
+                <div class="project-box container d-flex justify-content-center align-items-center py-4">
+                    <div class="project-img col-lg-6">
+                        <img class="project-image" src="../projects/oracle.png">
+                    </div>
+                    <div class="project-details col-lg-6">
+                        <h3 class="py-2">Oracle-Koha Bridge</h3>
+                        <p class="py-2">
+                            Retrieving data residing in oracle database and filterring out data to insert, update or list students.    
+                        </p>
+                        <div class="status d-flex col-lg-12 p-0">
+                            <div class="col-lg-6 p-0">
+                                <h3 class="py-2">Category:</h3>
+                                <p class="py-1">Web Dev: Module</p>
+                            </div>
                         </div>
-                    </div><!-- End Project-Box-->
-                    <div class="project-box container" id="project-2">
-                        <img class="project-img" src="../projects/oracle.png">
-                        <div class="project-toggle col-lg-12">
-                            <button class="porject-btn py-2"><i class="project-arrow fa fa-arrow-up"></i></button>
-                        </div>
-                        <div class="project-detail col-lg-12">
-                            <h3 class="py-2">Oracle-Koha Bridge</h3>
-                            <p class="py-2">
-                               Retrieving data residing in oracle database and filterring out data to insert, update or list students.    
-                            </p>
-                            <h3 class="py-2">Category:</h3>
-                            <p class="py-1">Web Dev: Module</p>
-                            <h3 class="py-2">Status:</h3>
-                            <p class="py-1">On Going</p>
-                            <h3 class="py-2">Techs:</h3>
-                            <p class="py-1">Node-JS, HTML, CSS</p>
-                            <h3 class="py-2">Link:</h3>
-                            <p class="py-1">Unavailable</p>
-                        </div>
-                    </div><!-- End Project-Box-->
-                </div><!-- End Row -->
-                <div class="row d-flex justify-content-center">
-                    <div class="project-box container" id="project-3">
-                        <img class="project-img" src="../projects/zeenia.png">
-                        <div class="project-toggle col-lg-12">
-                            <button class="porject-btn py-2"><i class="project-arrow fa fa-arrow-up"></i></button>
-                        </div>
-                        <div class="project-detail col-lg-12">
-                            <h3 class="py-2">Zeenia Travels</h3>
-                            <p class="py-2">
-                              Zeena travels, a touring agent website helping you select and plan for your next vacation or bussiness trips.
-                            </p>
-                            <h3 class="py-2">Category:</h3>
-                            <p class="py-1">Web Dev: Portfolio</p>
-                            <h3 class="py-2">Status:</h3>
-                            <p class="py-1">Completed</p>
-                            <h3 class="py-2">Techs:</h3>
-                            <p class="py-1">Wordpress</p>
-                            <h3 class="py-2">Link:</h3>
+                    </div>
+                </div><!-- End Project-Box -->
+            </div><!-- End Row -->
+            <div class="project row d-flex justify-content-center align-items-center py-3">
+                <div class="project-techs d-flex justify-content-center align-items-center">
+                    <div class="row d-flex justify-content-center">
+                        <img class="mx-2" src="../pictures/wordpress.png">
+                    </div>
+                </div>
+                <div class="project-box container d-flex justify-content-center align-items-center py-4">
+                    <div class="project-img col-lg-6">
+                        <img class="project-image" src="../projects/zeenia.png">
+                    </div>
+                    <div class="project-details col-lg-6">
+                        <h3 class="py-2">Zeenia Travels</h3>
+                        <p class="py-2">
+                            Zeena travels, a touring agent website helping you select and plan for your next vacation or bussiness trips.
+                        </p>
+                        <div class="status d-flex col-lg-12 p-0">
+                            <div class="col-lg-6 p-0">
+                                <h3 class="py-2">Category:</h3>
+                                <p class="py-1">Web Dev: Portfolio</p>
+                            </div>
+                            <div class="col-lg-6 p-0">
+                                <h3 class="py-2">Link:</h3>
                             <a class="py-1" href="https://zeeniatravels.com/" target="_blank"><i class="fa fa-share-square"></i></a>
+                            </div>
                         </div>
-                    </div><!-- End Project-Box-->
-                    <div class="project-box container" id="project-4">
-                        <img class="project-img" src="../projects/bsk.png">
-                        <div class="project-toggle col-lg-12">
-                            <button class="porject-btn py-2"><i class="project-arrow fa fa-arrow-up"></i></button>
+                    </div>
+                </div><!-- End Project-Box -->
+            </div><!-- End Row -->
+            <div class="project row d-flex justify-content-center align-items-center py-3">
+                <div class="project-techs d-flex justify-content-center align-items-center">
+                    <div class="row d-flex justify-content-center">
+                        <img class="mx-2" src="../pictures/html.png">
+                        <img class="mx-2" src="../pictures/css.png">
+                    </div>
+                </div>
+                <div class="project-box container d-flex justify-content-center align-items-center py-4">
+                    <div class="project-img col-lg-6">
+                        <img class="project-image" src="../projects/bsk.png">
+                    </div>
+                    <div class="project-details col-lg-6">
+                        <h3 class="py-2">BSK Portfolio</h3>
+                        <p class="py-2">
+                            A Protfolio website showcasing BSK's technical experties and service details
+                        </p>
+                        <div class="status d-flex col-lg-12 p-0">
+                            <div class="col-lg-6 p-0">
+                                <h3 class="py-2">Category:</h3>
+                                <p class="py-1">Web Dev: Portfolio</p>
+                            </div>
+                            <div class="col-lg-6 p-0">
+                                <h3 class="py-2">Link:</h3>
+                                <a class="py-1" href="https://www.brisktechnologies.com.pk/" target="_blank"><i class="fa fa-share-square"></i></a>
+                            </div>
                         </div>
-                        <div class="project-detail col-lg-12">
-                            <h3 class="py-2">BSK Portfolio</h3>
-                            <p class="py-2">
-                              A Protfolio website showcasing BSK's technical experties and service details
-                            </p>
-                            <h3 class="py-2">Category:</h3>
-                            <p class="py-1">Web Dev: Portfolio</p>
-                            <h3 class="py-2">Status:</h3>
-                            <p class="py-1">On Going</p>
-                            <h3 class="py-2">Techs:</h3>
-                            <p class="py-1">HTML, CSS</p>
-                            <h3 class="py-2">Link:</h3>
-                            <a class="py-1" href="https://www.brisktechnologies.com.pk/" target="_blank"><i class="fa fa-share-square"></i></a>
+                    </div>
+                </div><!-- End Project-Box -->
+            </div><!-- End Row -->
+            <div class="project row d-flex justify-content-center align-items-center py-3">
+                <div class="project-techs d-flex justify-content-center align-items-center">
+                    <div class="row d-flex justify-content-center">
+                        <img class="mx-2" src="../pictures/wordpress.png">
+                    </div>
+                </div>
+                <div class="project-box container d-flex justify-content-center align-items-center py-4">
+                    <div class="project-img col-lg-6">
+                        <img class="project-image" src="../projects/zbe.png">
+                    </div>
+                    <div class="project-details col-lg-6">
+                        <h3 class="py-2">ZBE</h3>
+                        <p class="py-2">
+                            Portfolio website for zbe enterprises, a general trading enterprise. The portfolio
+                            shows details about their products and services  
+                        </p>
+                        <div class="status d-flex col-lg-12 p-0">
+                            <div class="col-lg-6 p-0">
+                                <h3 class="py-2">Category:</h3>
+                                <p class="py-1">Web Dev: Portfolio</p>
+                            </div>
+                            <div class="col-lg-6 p-0">
+                                <h3 class="py-2">Link:</h3>
+                                <a class="py-1" href="https://zbe.com.pk/" target="_blank"><i class="fa fa-share-square"></i></a>
+                            </div>
                         </div>
-                    </div><!-- End Project-Box-->
-                </div><!-- End Row -->
-                <div class="row d-flex justify-content-center"> 
-                    <div class="project-box container" id="project-5">
-                        <img class="project-img" src="../projects/zbe.png">
-                        <div class="project-toggle col-lg-12">
-                            <button class="porject-btn py-2"><i class="project-arrow fa fa-arrow-up"></i></button>
+                    </div>
+                </div><!-- End Project-Box -->
+            </div><!-- End Row -->
+            <div class="project row d-flex justify-content-center align-items-center py-3">
+                <div class="project-techs d-flex justify-content-center align-items-center">
+                    <div class="row d-flex justify-content-center">
+                        <img class="mx-2" src="../pictures/php.png">
+                        <img class="mx-2" src="../pictures/html.png">
+                        <img class="mx-2" src="../pictures/css.png">
+                    </div>
+                </div>
+                <div class="project-box container d-flex justify-content-center align-items-center py-4">
+                    <div class="project-img col-lg-6">
+                        <img class="project-image" src="../projects/koha.png">
+                    </div>
+                    <div class="project-details col-lg-6">
+                        <h3 class="py-2">Koha API Module</h3>
+                        <p class="py-2">
+                            Module to GET data from the koha web api, this module deals with authenticating users, routings and filtering api response.
+                        </p>
+                        <div class="status d-flex col-lg-12 p-0">
+                            <div class="col-lg-6 p-0">
+                                <h3 class="py-2">Category:</h3>
+                                <p class="py-1">Web Dev: Module</p>
+                            </div>
                         </div>
-                        <div class="project-detail col-lg-12">
-                            <h3 class="py-2">ZBE</h3>
-                            <p class="py-2">
-                                Portfolio website for zbe enterprises, a general trading enterprise. The portfolio
-                                shows details about their products and services  
-                            </p>
-                            <h3 class="py-2">Category:</h3>
-                            <p class="py-1">Web Dev: Portfolio</p>
-                            <h3 class="py-2">Status:</h3>
-                            <p class="py-1">Completed</p>
-                            <h3 class="py-2">Techs:</h3>
-                            <p class="py-1">Wordpress</p>
-                            <h3 class="py-2">Link:</h3>
-                            <a class="py-1" href="https://zbe.com.pk/" target="_blank"><i class="fa fa-share-square"></i></a>
-                        </div>
-                    </div><!-- End Project-Box-->
-                    <div class="project-box container" id="project-6">
-                        <img class="project-img" src="../projects/koha.png">
-                        <div class="project-toggle col-lg-12">
-                            <button class="porject-btn py-2"><i class="project-arrow fa fa-arrow-up"></i></button>
-                        </div>
-                        <div class="project-detail col-lg-12">
-                            <h3 class="py-2">Koha API Module</h3>
-                            <p class="py-2">
-                                Module to GET data from the koha web api, this module deals with authenticating users, routings and filtering api response.
-                            </p>
-                            <h3 class="py-2">Category:</h3>
-                            <p class="py-1">Web Dev: Module</p>
-                            <h3 class="py-2">Status:</h3>
-                            <p class="py-1">Completed</p>
-                            <h3 class="py-2">Techs:</h3>
-                            <p class="py-1">PHP, HTML, CSS</p>
-                            <h3 class="py-2">Link:</h3>
-                            <p class="py-1">unavailable</a>
-                        </div>
-                    </div><!-- End Project-Box-->
-                </div><!-- End Row -->
-            </div><!-- End Container-Flex -->
+                    </div>
+                </div><!-- End Project-Box -->
+            </div><!-- End Row -->
         </section><!-- End Projects -->
         <section class="contact">
             <div class="container-flex mt-4">
@@ -429,9 +463,9 @@
                   </ul>
                 </div><!-- End Row -->
                 <div class="row d-flex justify-content-center py-2">
-                    <a title="fb" class="social-link link d-flex justify-content-center py-2 mx-3" href="https://www.facebook.com/people/XWEN/61550094961337/"><i class="fa fa-facebook"></i></a>
-                    <a title="inst" class="social-link link d-flex justify-content-center py-2 mx-3" href="https://instagram.com/xwen__official?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D"><i class="fa fa-instagram"></i></a>
-                    <a title="lind" class="social-link link d-flex justify-content-center py-2 mx-3" href="https://www.linkedin.com/in/xwen-94b7a128a/"><i class="fa fa-linkedin"></i></a>
+                    <a title="fb" class="social-link link d-flex justify-content-center py-2 mx-3" href="https://www.facebook.com/people/XWEN/61550094961337/" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a title="inst" class="social-link link d-flex justify-content-center py-2 mx-3" href="https://instagram.com/xwen__official?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a title="lind" class="social-link link d-flex justify-content-center py-2 mx-3" href="https://www.linkedin.com/in/xwen-94b7a128a/" target="_blank"><i class="fa fa-linkedin"></i></a>
                 </div><!-- End Row -->
             </div><!-- End Container-Flex -->
             <div class="closing container-flex w-100">

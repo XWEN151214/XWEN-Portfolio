@@ -21,9 +21,6 @@ let tech_img = document.getElementsByClassName("tech-img");
 let img_1 = document.getElementsByClassName("img-1");
 let img_2 = document.getElementsByClassName("img-2");
 let slider_img = document.getElementsByClassName("slider-img");
-let project_box = document.getElementsByClassName("project-box");
-let project_arrow = document.getElementsByClassName("project-arrow");
-let project_detail = document.getElementsByClassName("project-detail");
 
 
 function display_menu()
@@ -150,44 +147,7 @@ function tech_ani()
     }
 }
 
-function show_project()
-{
-    for(let i=0; i<project_arrow.length; i++)
-    {
-        project_arrow[i].addEventListener
-        (
-            "click",
-            function()
-            {
-                if(project_detail[i].style.display === "none" || project_detail[i].style.display === "")
-                {
-                    project_box[i].style.maxHeight = "max-content";
-                    for(let j=0; j<project_box.length; j++)
-                    {
-                        if(j != i)
-                        {
-                            project_detail[j].style.display = "none";
-                            start_ani(project_arrow[j], "rotate-up 0.5s 1");
-                            project_arrow[j].style.transform = "scale(1)";
-                            project_box[j].style.maxHeight = "18rem";
-                        }
-                    }
-                    start_ani(project_arrow[i], "rotate-down 0.5s 1");
-                    project_arrow[i].style.transform = "scale(-1)";
-                    project_detail[i].style.display = "block";
-                }
-                else
-                {
-                    start_ani(project_arrow[i], "rotate-up 0.5s 1");
-                    project_arrow[i].style.transform = "scale(1)";
-                    project_detail[i].style.display = "none";
-                }
-            }
-        )
-    }
-}
 
 display_menu();
 display_service();
 tech_ani();
-show_project();
