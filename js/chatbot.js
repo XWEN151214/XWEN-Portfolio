@@ -103,7 +103,7 @@ function chat_ai(msg)
     {
         answer(
                 `Allright great checkout our project on zeeniatravels<br>
-                <a href=https://zeeniatravels.com/ target="_blank">Link</a>`
+                <a title="zeeniatravels" href=https://zeeniatravels.com/ target="_blank">Link</a>`
               );
     }
     else if(msg.value.includes('mobile') || msg.value.includes('android') || msg.value.includes('ios'))

@@ -126,7 +126,7 @@ function tech_ani()
 
     slider_img[0].style.animation = null;
     slider_img[0].offsetHeight;
-    slider_img[0].style.animation = "slide-in 1s 1";
+    slider_img[0].style.animation = "slide-in 0.5s 1";
     for(let i=1; i<slider_img.length; i++)
     {
         slider_img[i].style.visibility = "hidden";
@@ -141,7 +141,7 @@ function tech_ani()
                 slider_img[i].style.visibility = "visible";
                 slider_img[i].style.animation = null;
                 slider_img[i].offsetHeight;
-                slider_img[i].style.animation = "slide-in 1s 1";
+                slider_img[i].style.animation = "slide-in 0.5s 1";
             }
         )
     }
