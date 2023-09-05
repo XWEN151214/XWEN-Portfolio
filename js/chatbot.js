@@ -63,7 +63,7 @@ function answer(msg)
             ()=>
             {
                 bot.innerHTML += 
-                `<div class="bot-text ans container-flex">
+                `<div class="bot-text ans container-flex" style="animation: slide-in 1s 1;">
                     <p class="text-light py-2 px-2"> 
                       ${msg}
                     </p>
@@ -102,8 +102,11 @@ function chat_ai(msg)
     else if(msg.value.includes('website'))
     {
         answer(
-                `Allright great checkout our project on zeeniatravels<br>
+                `Allright checkout our project on zeeniatravels<br>
                 <a title="zeeniatravels" href=https://zeeniatravels.com/ target="_blank">Link</a>`
+              );
+        answer(
+                `you can contact us anytime to discuss project details`
               );
     }
     else if(msg.value.includes('mobile') || msg.value.includes('android') || msg.value.includes('ios'))
@@ -113,12 +116,6 @@ function chat_ai(msg)
                 it will start soon.`
               );
     }
-    else
-    {
-        answer(
-                 `Sorry! I do not understand.`
-              );
-    } 
 }
 
 chat_btn.addEventListener
