@@ -63,7 +63,7 @@ function answer(msg)
             ()=>
             {
                 bot.innerHTML += 
-                `<div class="bot-text ans container-flex" style="animation: slide-in 1s 1;">
+                `<div class="bot-text ans container-flex">
                     <p class="text-light py-2 px-2"> 
                       ${msg}
                     </p>
