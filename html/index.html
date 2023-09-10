@@ -15,6 +15,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/main.css">
     <!-- Header -->
     <link rel = "icon" href = "../pictures/logo.png" type = "image/x-icon">
@@ -34,13 +35,14 @@
                         <li class="menu-item mx-3"><a title="home" class="link" href=#>Home</a></li>
                         <li class="menu-item mx-3"><a title="about" class="link" href="#about">About Us</a></li>
                         <li class="menu-item mx-3"><a title="projects" class="link" href="#projects">Projects</a></li>
+                        <li class="menu-item mx-3"><a title="contact-us" class="link" href="#contact">Contact Us</a></li>
                     </ul><!-- End Menu-Items -->
                     <!-- Mobiile Menu -->
                     <ul class="mobile-menu-items py-2" id="mobile-menu">
                         <li class="menu-item p-1"><a title="home" class="link" href=#>Home</a></li>
                         <li class="menu-item p-1"><a title="about" class="link" href="#about">About Us</a></li>
                         <li class="menu-item p-1"><a title="projects" class="link" href="#">Projects</a></li>
-                        <li class="menu-item p-1"><a title="Our story" class="link" href="#">Our Story</a></li>
+                        <li class="menu-item p-1"><a title="contact-us" class="link" href="#contact">Contact Us</a></li>
                         <li class="menu-item d-flex align-items-center p-1 mt-2">
                             <a title="facebook" class="social-link d-flex justify-content-center" href="https://www.facebook.com/profile.php?id=61550764452547&mibextid=ZbWKwL" target="_blank"><i class="fa fa-facebook mx-1 p-1"></i></a>
                             <a title="linkedin" class="social-link d-flex justify-content-center" href="https://www.linkedin.com/in/xwen-co-7b873928b/" target="_blank"><i class="fa fa-linkedin mx-1 p-1"></i></a>
@@ -78,35 +80,10 @@
                 <div class="next slider-control mx-2" id="next"></div>
             </div><!-- End Header -->
         </section><!-- End Main -->
-        <!-- Chat Bot -->
-        <section class="chatbot">
-            <div class="container">
-                <div class="chat-box" id="bot-box">
-                    <div class="col-lg-3 py-3" id="bot">
-                        <div class="bot-text container-flex">
-                            <p class="text-light py-2 px-2"> 
-                              Welcome to our website's interactive chatbot, your friendly and knowledgeable virtual assistant! 
-                            </p>
-                        </div><!-- End Bot-Text -->
-                        <div class="bot-text container-flex">
-                            <p class="text-light py-2 px-2">
-                                Lets talk business, what kind of service you are looking for?
-                                A website, mobile app or an ecommerce platform.
-                            </p>
-                        </div><!-- End Bot-Text -->
-                    </div><!-- End Col -->
-                    <form class="chat-form py-2 px-2" action="#">
-                        <input class="py-2" type="text" id="msg" placeholder="type your message">
-                    </form><!-- End Chat-Form -->
-                    <button class="chat-submit mx-2" type="button" title="submit" id="msg-submit" onclick="read_input()"><i class="fa fa-paper-plane py-1"></i></button>
-                </div><!-- End Chat-Box -->
-                <button class="chat-btn py-4" title="chatbot" id="bot-btn"></button>
-            </div><!-- End Container -->
-        </section><!-- End ChatBot-->
         <!-- About Us -->
         <section class="about-us" id="about">
             <div class="container-flex py-4 px-lg-5" id="main-h">
-                <h1 class="py-2">XWEN:  Uniting Digital Puzzle Pieces for Tomorrow's Triumph</h1>
+                <h1 class="py-4">XWEN:  Uniting Digital Puzzle Pieces for Tomorrow's Triumph</h1>
             </div><!-- End Container-Flex-->
             <div class="tabs container d-flex justify-content-center align-items-center py-2">
                <button class="tab-btn mx-2">INTRO</button>
@@ -116,7 +93,7 @@
             </div><!-- End Tabs -->
             <div class="about-content row">
                 <div class="content col-lg-6" id="profile-image">
-                    <img class="image" src="../gifs/puzzle.gif" alt="puzzle">
+                    <img class="image" src="../gifs/puzzle-color-bg.gif" alt="puzzle">
                 </div><!-- End Col-->
                 <div class="content col-lg-6" id="profile-text">
                     <p class="py-2">
@@ -126,7 +103,7 @@
             </div><!-- End Row -->
             <div class="about-content row mt-4">
                 <div class="content col-lg-6">
-                    <img class="journey-image" src="../pictures/journey1.png" alt="journey">
+                    <img class="journey-image" src="../pictures/journey.png" alt="journey">
                 </div><!-- End Col-->
                 <div class="content col-lg-6">
                     <p class="py-2 d-flex align-items-center">
@@ -134,44 +111,29 @@
                     </p>
                 </div><!-- End Col-->
             </div><!-- End Row -->
-            <div class="about-content row mt-4 py-2">
+            <div class="about-content row mt-4 py-3">
                 <div class="services content row d-flex justify-content-center pt-2">
-                    <div class="service row d-flex justify-content-center align-items-center mx-3">
-                        <img class="service-image" src="../pictures/web.png" alt="web">
+                    <div class="service row d-flex justify-content-center align-items-center mx-3 mt-5">
+                        <i class="fa fa-code"></i>
                         <h2 class="text-center py-2">Website Development</h2>
-                        <div class="description container-flex py-2">
-                            <h3 class="service-text text-light py-2 px-3"></h3>
-                        </div><!-- End Description -->
                     </div><!-- End Row-->
-                    <div class="service row d-flex justify-content-center align-items-center mx-3">
-                        <img class="service-image" src="../pictures/ai.png" alt="ai">
+                    <div class="service row d-flex justify-content-center align-items-center mx-3 mt-5">
+                        <h3 class="icon-text">AI</h3>
                         <h2 class="text-center py-2">AI & Machine Learning</h2>
-                        <div class="description container-flex py-2">
-                            <h3 class="service-text text-light py-2 px-3"></h3>
-                        </div><!-- End Description -->
                     </div><!-- End Row-->
-                    <div class="service row d-flex justify-content-center align-items-center mx-3">
-                        <img class="service-image" src="../pictures/ui.png" alt="ui">
+                    <div class="service row d-flex justify-content-center align-items-center mx-3 mt-5">
+                        <i class="material-icons">&#xe051;</i>
                         <h2 class="text-center py-2">UI/UX Development</h2>
-                        <div class="description container-flex py-2">
-                            <h3 class="service-text text-light py-2 px-3"></h3>
-                        </div>
                     </div><!-- End Row-->
                 </div><!-- End Row-->
                 <div class="services content row d-flex justify-content-center">
                     <div class="service row d-flex justify-content-center align-items-center mx-3 mt-5">
-                        <img class="service-image" src="../pictures/ecomm.png" alt="ecomm">
+                        <i class="fa fa-shopping-cart"></i>
                         <h2 class="text-center py-2">E-Commerce Solutions</h2>
-                        <div class="description container-flex py-2">
-                            <h3 class="service-text text-light py-2 px-3"></h3>
-                        </div><!-- End Description -->
                     </div><!-- End Row-->
                     <div class="service row d-flex justify-content-center align-items-center mx-3 mt-5">
-                        <img class="service-image" src="../pictures/mobile.png" alt="mobile">
+                        <i class="material-icons">&#xe1b0;</i>
                         <h2 class="text-center py-2">Mobile App Development</h2>
-                        <div class="description container-flex py-2">
-                            <h3 class="service-text text-light py-2 px-3"></h3>
-                        </div><!-- End Description -->
                     </div><!-- End Row-->
                 </div>
             </div><!-- End Row -->
@@ -217,7 +179,7 @@
             </div><!-- End Row -->
         </section><!-- End About-Us -->
         <section class="techs">
-           <h1 class="py-2 px-lg-5">Technologies We Use</h1>
+           <h1 class="py-4 px-lg-5">Technologies We Use</h1>
            <div class="container-flex d-flex justify-content-center py-4 w-100">
              <div class="slider row py-2">
                 <div class="slider-img col-lg-2 mt-3">
@@ -255,173 +217,141 @@
         </section><!-- End Techs-->
         <section class="projects" id="projects">
             <h1 class="py-4 px-lg-5">Recent Projects</h1>
-            <div class="project row d-flex justify-content-center align-items-center py-3">
-                <div class="project-techs d-flex justify-content-center align-items-center">
-                    <div class="row d-flex justify-content-center">
-                        <img class="mx-2" src="../pictures/html.png" alt="html">
-                        <img class="mx-2" src="../pictures/css.png" alt="css">
-                    </div>
-                </div>
-                <div class="project-box container d-flex justify-content-center align-items-center py-4">
-                    <div class="project-img col-lg-6">
-                        <img class="project-image" src="../projects/tibco.png" alt="project-1">
-                    </div>
-                    <div class="project-details col-lg-6">
-                        <h3 class="py-2">Jasper Reports Module</h3>
-                        <p class="py-2">
-                            A simple module allowing multiple users to execute reports and view them directly from their server.<br>
-                            The module handles authentication and routing making it easier for the end user to access jaspersoft software.  
-                        </p>
-                        <div class="status d-flex col-lg-12 p-0">
-                            <div class="col-lg-6 p-0">
-                                <h3 class="py-2">Category:</h3>
-                                <p class="py-1">Web Dev: Module</p>
-                            </div>
+            <div class="container-flex">
+                <div class="project row justify-content-center align-items-center py-3">
+                    <div class="project-box d-flex justify-content-center align-items-center mx-3">
+                        <div class="project-img py-2">
+                            <img src="../projects/tibco.png" alt="tibco">
                         </div>
-                    </div>
-                </div><!-- End Project-Box -->
-            </div><!-- End Row -->
-            <div class="project row d-flex justify-content-center align-items-center py-3">
-                <div class="project-techs d-flex justify-content-center align-items-center">
-                    <div class="row d-flex justify-content-center">
-                        <img class="mx-2" src="../pictures/node-fill.png" alt="node">
-                        <img class="mx-2" src="../pictures/html.png" alt="html">
-                        <img class="mx-2" src="../pictures/css.png" alt="css">
-                    </div>
-                </div>
-                <div class="project-box container d-flex justify-content-center align-items-center py-4">
-                    <div class="project-img col-lg-6">
-                        <img class="project-image" src="../projects/oracle.png" alt="project-2">
-                    </div>
-                    <div class="project-details col-lg-6">
-                        <h3 class="py-2">Oracle-Koha Bridge</h3>
-                        <p class="py-2">
-                            Retrieving data residing in oracle database and filterring out data to insert, update or list students.    
-                        </p>
-                        <div class="status d-flex col-lg-12 p-0">
-                            <div class="col-lg-6 p-0">
-                                <h3 class="py-2">Category:</h3>
-                                <p class="py-1">Web Dev: Module</p>
-                            </div>
+                        <div class="project-text pt-2">
+                            <h3 class="text-light text-center py-2">Jasper Reports Module</h3>
+                            <p class="text-light text-center py-2">
+                                A simple module allowing multiple users to execute reports and view them directly from their server.
+                            </p>
                         </div>
-                    </div>
-                </div><!-- End Project-Box -->
-            </div><!-- End Row -->
-            <div class="project row d-flex justify-content-center align-items-center py-3">
-                <div class="project-techs d-flex justify-content-center align-items-center">
-                    <div class="row d-flex justify-content-center">
-                        <img class="mx-2" src="../pictures/wordpress.png" alt="wordpress">
-                    </div>
-                </div>
-                <div class="project-box container d-flex justify-content-center align-items-center py-4">
-                    <div class="project-img col-lg-6">
-                        <img class="project-image" src="../projects/zeenia.png" alt="project-3">
-                    </div>
-                    <div class="project-details col-lg-6">
-                        <h3 class="py-2">Zeenia Travels</h3>
-                        <p class="py-2">
-                            Zeena travels, a touring agent website helping you select and plan for your next vacation or bussiness trips.
-                        </p>
-                        <div class="status d-flex col-lg-12 p-0">
-                            <div class="col-lg-6 p-0">
-                                <h3 class="py-2">Category:</h3>
-                                <p class="py-1">Web Dev: Portfolio</p>
-                            </div>
-                            <div class="col-lg-6 p-0">
-                                <h3 class="py-2">Link:</h3>
-                            <a title="zeeniatravels" class="py-1" href="https://zeeniatravels.com/" target="_blank"><i class="fa fa-share-square"></i></a>
-                            </div>
+                        <button class="btn d-flex">
+                            <a class="project-link d-flex w-100" href="#">
+                                <div class="col-lg-1 mr-4 px-0">
+                                    <i class="fa fa-share-square"></i>
+                                </div>
+                                <div class="col-lg-1 px-0">
+                                   view
+                                </div>
+                            </a>
+                        </button>
+                    </div><!-- End Project-Box -->
+                    <div class="project-box d-flex justify-content-center align-items-center mx-3">
+                        <div class="project-img py-2">
+                            <img src="../projects/oracle.png" alt="oracle">
                         </div>
-                    </div>
-                </div><!-- End Project-Box -->
-            </div><!-- End Row -->
-            <div class="project row d-flex justify-content-center align-items-center py-3">
-                <div class="project-techs d-flex justify-content-center align-items-center">
-                    <div class="row d-flex justify-content-center">
-                        <img class="mx-2" src="../pictures/html.png" alt="html">
-                        <img class="mx-2" src="../pictures/css.png" alt="css">
-                    </div>
-                </div>
-                <div class="project-box container d-flex justify-content-center align-items-center py-4">
-                    <div class="project-img col-lg-6">
-                        <img class="project-image" src="../projects/bsk.png" alt="project-4">
-                    </div>
-                    <div class="project-details col-lg-6">
-                        <h3 class="py-2">BSK Portfolio</h3>
-                        <p class="py-2">
-                            A Protfolio website showcasing BSK's technical experties and service details
-                        </p>
-                        <div class="status d-flex col-lg-12 p-0">
-                            <div class="col-lg-6 p-0">
-                                <h3 class="py-2">Category:</h3>
-                                <p class="py-1">Web Dev: Portfolio</p>
-                            </div>
-                            <div class="col-lg-6 p-0">
-                                <h3 class="py-2">Link:</h3>
-                                <a title="bsk" class="py-1" href="https://www.brisktechnologies.com.pk/" target="_blank"><i class="fa fa-share-square"></i></a>
-                            </div>
+                        <div class="project-text pt-2">
+                            <h3 class="text-light text-center py-2">Oracle-Koha Bridge</h3>
+                            <p class="text-light text-center py-2">
+                                Retrieving data residing in oracle database and filterring out data to insert, update or list students.
+                            </p>
                         </div>
-                    </div>
-                </div><!-- End Project-Box -->
-            </div><!-- End Row -->
-            <div class="project row d-flex justify-content-center align-items-center py-3">
-                <div class="project-techs d-flex justify-content-center align-items-center">
-                    <div class="row d-flex justify-content-center">
-                        <img class="mx-2" src="../pictures/wordpress.png" alt="wordpress">
-                    </div>
-                </div>
-                <div class="project-box container d-flex justify-content-center align-items-center py-4">
-                    <div class="project-img col-lg-6">
-                        <img class="project-image" src="../projects/zbe.png" alt="project-5">
-                    </div>
-                    <div class="project-details col-lg-6">
-                        <h3 class="py-2">ZBE</h3>
-                        <p class="py-2">
-                            Portfolio website for zbe enterprises, a general trading enterprise. The portfolio
-                            shows details about their products and services  
-                        </p>
-                        <div class="status d-flex col-lg-12 p-0">
-                            <div class="col-lg-6 p-0">
-                                <h3 class="py-2">Category:</h3>
-                                <p class="py-1">Web Dev: Portfolio</p>
-                            </div>
-                            <div class="col-lg-6 p-0">
-                                <h3 class="py-2">Link:</h3>
-                                <a title="zbe" class="py-1" href="https://zbe.com.pk/" target="_blank"><i class="fa fa-share-square"></i></a>
-                            </div>
+                        <button class="btn d-flex">
+                            <a class="project-link d-flex w-100" href="#">
+                                <div class="col-lg-1 mr-4 px-0">
+                                    <i class="fa fa-share-square"></i>
+                                </div>
+                                <div class="col-lg-1 px-0">
+                                    view
+                                </div>
+                            </a>
+                        </button>
+                    </div><!-- End Project-Box -->
+                    <div class="project-box d-flex justify-content-center align-items-center mx-3">
+                        <div class="project-img py-2">
+                            <img src="../projects/zeenia.png" alt="zeenia">
                         </div>
-                    </div>
-                </div><!-- End Project-Box -->
-            </div><!-- End Row -->
-            <div class="project row d-flex justify-content-center align-items-center pt-3">
-                <div class="project-techs d-flex justify-content-center align-items-center">
-                    <div class="row d-flex justify-content-center">
-                        <img class="mx-2" src="../pictures/php.png" alt="php">
-                        <img class="mx-2" src="../pictures/html.png" alt="html">
-                        <img class="mx-2" src="../pictures/css.png" alt="css">
-                    </div>
-                </div>
-                <div class="project-box container d-flex justify-content-center align-items-center py-4">
-                    <div class="project-img col-lg-6">
-                        <img class="project-image" src="../projects/koha.png" alt="project-6">
-                    </div>
-                    <div class="project-details col-lg-6">
-                        <h3 class="py-2">Koha API Module</h3>
-                        <p class="py-2">
-                            Module to GET data from the koha web api, this module deals with authenticating users, routings and filtering api response.
-                        </p>
-                        <div class="status d-flex col-lg-12 p-0">
-                            <div class="col-lg-6 p-0">
-                                <h3 class="py-2">Category:</h3>
-                                <p class="py-1">Web Dev: Module</p>
-                            </div>
+                        <div class="project-text pt-2">
+                            <h3 class="text-light text-center py-2">Zeenia Travels</h3>
+                            <p class="text-light text-center py-2">
+                                Zeenia travels, a touring agent website helping you plan for your next vacation or bussiness trips.
+                            </p>
                         </div>
-                    </div>
-                </div><!-- End Project-Box -->
-            </div><!-- End Row -->
+                        <button class="btn d-flex">
+                            <a class="project-link d-flex w-100" href="https://zeeniatravels.com/" target="_blank">
+                                <div class="col-lg-1 mr-4 px-0">
+                                    <i class="fa fa-share-square"></i>
+                                </div>
+                                <div class="col-lg-1 px-0">
+                                    view
+                                </div>
+                            </a>
+                        </button>
+                    </div><!-- End Project-Box -->
+                </div><!-- End Row -->
+                <div class="project row justify-content-center align-items-center py-3">
+                    <div class="project-box d-flex justify-content-center align-items-center mx-3">
+                        <div class="project-img py-2">
+                            <img src="../projects/bsk.png" alt="bsk">
+                        </div>
+                        <div class="project-text pt-2">
+                            <h3 class="text-light text-center py-2">BSK Portfolio</h3>
+                            <p class="text-light text-center py-2">
+                                A Protfolio website showcasing BSK's technical experties and service details.
+                            </p>
+                        </div>
+                        <button class="btn d-flex">
+                            <a class="project-link d-flex w-100" href="https://www.brisktechnologies.com.pk/" target="_blank">
+                                <div class="col-lg-1 mr-4 px-0">
+                                    <i class="fa fa-share-square"></i>
+                                </div>
+                                <div class="col-lg-1 px-0">
+                                    view
+                                </div>
+                            </a>
+                        </button>
+                    </div><!-- End Project-Box -->
+                    <div class="project-box d-flex justify-content-center align-items-center mx-3">
+                        <div class="project-img py-2">
+                            <img src="../projects/koha.png" alt="koha">
+                        </div>
+                        <div class="project-text pt-2">
+                            <h3 class="text-light text-center py-2">Koha API Module</h3>
+                            <p class="text-light text-center py-2">
+                                Module to GET data from the koha web api, this module deals with authenticating users, routings and filtering api response.
+                            </p>
+                        </div>
+                        <button class="btn d-flex">
+                            <a class="project-link d-flex w-100" href="#">
+                                <div class="col-lg-1 mr-4 px-0">
+                                    <i class="fa fa-share-square"></i>
+                                </div>
+                                <div class="col-lg-1 px-0">
+                                    view
+                                </div>
+                            </a>
+                        </button>
+                    </div><!-- End Project-Box -->
+                    <div class="project-box d-flex justify-content-center align-items-center mx-3">
+                        <div class="project-img py-2">
+                            <img src="../projects/zbe.png" alt="zbe">
+                        </div>
+                        <div class="project-text pt-2">
+                            <h3 class="text-light text-center py-2">ZB Enterprises</h3>
+                            <p class="text-light text-center py-2">
+                                Portfolio website for zbe enterprises, a general trading enterprise.
+                            </p>
+                        </div>
+                        <button class="btn d-flex">
+                            <a class="project-link d-flex w-100" href="https://zbe.com.pk/" target="_blank">
+                                <div class="col-lg-1 mr-4 px-0">
+                                    <i class="fa fa-share-square"></i>
+                                </div>
+                                <div class="col-lg-1 px-0">
+                                    view
+                                </div>
+                            </a>
+                        </button>
+                    </div><!-- End Project-Box -->
+                </div><!-- End Row -->
+            </div><!-- End Container-Flex -->
         </section><!-- End Projects -->
-        <section class="contact">
-            <div class="container-flex mt-4">
+        <section class="contact" id="contact">
+            <div class="container-flex">
                 <div class="cover">
                     <div class="row d-flex justify-content-center align-items-center">
                         <div class="contact-info col-lg-6">
@@ -474,7 +404,7 @@
         </section><!-- End Conatct-->
     </body><!-- End Body -->
     <footer>
-        <div class="footer-cover container-flex mt-4 pt-4">
+        <div class="footer-cover container-flex pt-4">
             <div class="container-flex">
                 <div class="row d-flex justify-content-center align-items-center">
                   <ul class="quick-links d-flex justify-content-center">
@@ -485,7 +415,7 @@
                 </div><!-- End Row -->
                 <div class="row d-flex justify-content-center py-2">
                     <a title="facebook" class="social-link link d-flex justify-content-center py-2 mx-3" href="https://www.facebook.com/profile.php?id=61550764452547&mibextid=ZbWKwL" target="_blank"><i class="fa fa-facebook"></i></a>
-                    <!-- <a title="instagram" class="social-link link d-flex justify-content-center py-2 mx-3" href="https://instagram.com/xwen__official?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D" target="_blank"><i class="fa fa-instagram"></i></a> -->
+                    <a title="whatsapp" class="social-link link d-flex justify-content-center py-2 mx-3" href="https://wa.me/+923091225118" target="_blank"><i class="fa fa-whatsapp"></i></a>
                     <a title="linkedin" class="social-link link d-flex justify-content-center py-2 mx-3" href="https://www.linkedin.com/in/xwen-co-7b873928b/" target="_blank"><i class="fa fa-linkedin"></i></a>
                 </div><!-- End Row -->
             </div><!-- End Container-Flex -->
@@ -504,9 +434,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="../js/carousel.js"></script>
 <script src="../js/script.js"></script>
 <script src="../js/show_hide.js"></script>
-<script src="../js/chatbot.js"></script>
 <script src="../js/contact.js"></script>

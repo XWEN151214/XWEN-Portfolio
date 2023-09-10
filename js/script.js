@@ -59,31 +59,6 @@ function start_ani(ele, css_ani)
     ele.style.animation = css_ani;
 }
 
-function display_service()
-{
-   for(let i=0; i<service_arr.length; i++)
-   {
-     service_arr[i].addEventListener
-     (
-        "click",
-        function()
-        {
-            setTimeout(
-                function()
-                {
-                    text_idx = 0;
-                    hasleft = false;
-                    service_text[i].innerHTML = null;
-                    description_arr[i].style.display = "block";
-                    description_arr[i].style.animation = null
-                    description_arr[i].offsetHeight;
-                    description_arr[i].style.animation = "fade-in 1s 1";
-                    type(service_phrase[i], service_text[i]);
-                }, 50);
-        }
-     )
-   }
-}
 
 function hide_servcie()
 {
@@ -102,24 +77,6 @@ function hide_servcie()
     }
 }
 
-function type(phrase, text)
-{
-    hide_servcie();
-    if(text_idx < phrase.length && !hasleft)
-    {
-        text.innerHTML += phrase[text_idx];
-        text_idx++;
-        setTimeout(
-            function()
-            {
-               type(phrase, text);
-            }, 30);
-    }
-    else
-    {
-        text_idx = 0;
-    }
-}
 
 function tech_ani()
 {
@@ -149,5 +106,4 @@ function tech_ani()
 
 
 display_menu();
-display_service();
 tech_ani();

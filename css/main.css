@@ -3,17 +3,19 @@
 html
 {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body
 {
     overflow-x: hidden;
+    background-color: var(--primary);
 }
 
 :root
 {
     --primary: #04203d;
-	--primary-light: #2ad8dd;
+	--primary-light: #05294e;
 	--secondary: #084c94;
     --tertiary: #12Bcd8;
 	--gradient: linear-gradient(to right,#04203d, #084c94);
@@ -122,11 +124,22 @@ ul
     font-weight: 500;
 }
 
+.btn a
+{
+    color: var(--primary);
+}
+
 .btn:hover
 {
     background-color:var(--secondary);
     color: #ffff; 
 }
+
+.btn:hover a
+{
+    color: white;
+    text-decoration: none;
+} 
 
 /* Main */
 
@@ -281,7 +294,7 @@ ul
 
 .menu .social-link i:hover
 {
-    color: var(--primary-light);
+    color: var(--tertiary);
     transform: scale(1.1);
 }
 
@@ -403,216 +416,14 @@ ul
     position: absolute;
 }
 
-/* Chat Bot */
-
-.chatbot
-{
-    position: fixed;
-    right: 1rem;
-    bottom: 1rem;
-    z-index: 10;
-}
-
-.chatbot .chat-btn
-{
-    background-image: url(../pictures/chatbot.png);
-    background-color: var(--primary-light);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: center;
-    border-width: 0;
-    outline: none;
-    width: 60px;
-    height: 60px;
-    border-radius: 100%;
-    animation: slide-out 1s 1;
-    position: relative;
-}
-
-.chatbot .chat-btn:hover
-{
-    transform: scale(1.1);
-}
-
-.chatbot .chat-box
-{
-    width: 22rem;
-    height: 32rem;
-    background-color: #ffff;
-    background-image: url(../pictures/logo.png);
-    background-size: 150px;
-    background-position: center;
-    background-repeat: no-repeat;
-    border: 2px var(--primary) solid;
-    position: fixed;
-    border-radius: 20px;
-    bottom: 2rem;
-    right: 3rem;
-    overflow-y: scroll;
-    display: none;
-}
-
-::-webkit-scrollbar-button
-{
-   background-color: var(--primary);
-}
-
-@media screen and (max-width: 768px)
-{
-    .chatbot .chat-box
-    {
-        right: 5rem;
-        bottom: 3rem;
-    }
-
-    .chatbot .chat-form 
-    {
-       margin-bottom: 1rem;
-       min-width: 45%;
-    }
-
-    .chatbot .chat-submit
-    {
-       margin-bottom: 1rem;
-       padding-right: 5%;
-    }
-}
-
-@media screen and (max-width: 425px)
-{
-    .chatbot
-    {
-        right: 0;
-    }
-    
-    .chatbot .chat-box
-    {
-        width: 18rem;
-        height: 28rem;
-        right: 4rem;
-    }
-
-    .chatbot .chat-form 
-    {
-       max-width: 64%;
-    }
-
-    .chatbot .chat-submit
-    {
-        padding-right: 0;
-        padding-left: 3%;
-    }
-}
-
-@media screen and (max-width: 375px)
-{ 
-    .chatbot .chat-form 
-    {
-       max-width: 75%;
-    }
-
-    .chatbot .chat-submit
-    {
-        padding-left: 5%;
-    }
-}
-
-@media screen and (max-width: 320px)
-{
-    .chatbot .chat-box
-    {
-        width: 15rem;
-        height: 24rem;
-    }
-
-    .chatbot .chat-form 
-    {
-       max-width: 75%;
-    }
-
-    .chatbot .chat-submit
-    {
-        padding-left: 20%;
-    }
-}
-
-.chatbot .chat-box div
-{
-   max-width: 100%;
-   position: relative;
-}
-
-.chatbot .chat-box .bot-text
-{
-   background-color: var(--primary);
-   border-radius: 10px;
-   width: fit-content;
-   max-width: 100%;
-   position: relative;
-}
-
-.chatbot .chat-box .human-text
-{
-   background-color: var(--primary-light);
-   border-radius: 10px;
-   width: fit-content;
-   max-width: 100%;
-   position: relative;
-}
-
-.chatbot .chat-box .chat-form
-{
-    position: fixed;
-    width: 20em;
-    height: 5em;
-    bottom: 0;
-}
-
-.chatbot input[type="text"]
-{
-    width: 80%;
-    height: 2rem;
-    border-radius: 10px;
-    background-color: var(--tertiary);
-    outline: none;
-    border: 2px var(--primary) solid;
-    text-indent: 5%;
-    color: #ffff;
-}
-
-.chatbot .chat-form input[type="text"]::placeholder
-{
-    color: #ffff;
-    padding: 1%;
-}
-
-.chatbot .chat-submit
-{
-    background: none;
-    width: 40px;
-    height: 7em;
-    border-radius: 100%;
-    border-width: 0;
-    outline: none;
-    position: fixed;
-    bottom: 0;
-    right: 6em;
-}
-
-.chatbot .chat-submit i
-{
-    color: var(--primary);
-    font-size: 25px;
-}
-
-.chatbot .chat-submit:hover i
-{
-    transform: scale(1.1);
-    color: var(--primary-light)
-}
-
 /* About Us */
+
+.about-us
+{
+    background-color: var(--primary);
+    margin-top: 0;
+    padding: 0;
+}
 
 .about-us .row
 {
@@ -639,7 +450,7 @@ ul
 
 .about-us h1
 {
-    color: var(--primary);
+    color: #ffff;
     font-weight: bold;
     font-size: 20px;
     position: relative;
@@ -647,14 +458,14 @@ ul
 
 .about-us .row p
 {
-    color: var(--primary);
+    color: #ffff;
     font-weight: 500;
 }
 
 .about-us .tabs .tab-btn
 {
-    background-color: #ffff;
-    color: var(--primary);
+    background-color: var(--primary);
+    color: #ffff;
     border-width: 0;
     border-radius: 0;
     width: 10%;
@@ -662,10 +473,10 @@ ul
 
 .about-us .tabs .tab-btn:focus
 {
-    background-color:  #ffff;
+    background-color:  var(--primary);
     outline: none;
-    color: var(--primary);
-    border-bottom: 2px var(--primary);
+    color: #ffff;
+    border-bottom: 2px #ffff;
     border-style: solid;
 }
 
@@ -709,26 +520,23 @@ ul
 
 .about-us .about-content .services .row:hover
 {
-    border-color: var(--primary);
+   box-shadow: 5px 5px 5px 5px var(--tertiary);
 }
 
-.about-us .about-content .services .row .description
+.about-us .about-content .services .row:hover
 {
-    display: none;
-    border-radius: 3px;
-    top: 3rem;
-    left: 6rem;
-    z-index: 10;
-    min-width: 15rem;
-    min-height: 6rem;
-    background-color: var(--primary);
-    position: absolute;
+    border-color: var(--secondary);
+}
+
+.about-us .about-content .services .row:hover
+{
+    border-color: #ffff;
 }
 
 .about-us .about-content .services .row h2
 {
     font-weight: bold;
-    color: var(--primary);
+    color: #ffff;
 }
 
 .about-us .about-content .services:nth-child(2)
@@ -741,6 +549,21 @@ ul
     height: 5rem;
     width: 5rem;
     top: 10px;
+}
+
+.about-us .about-content .services .row i
+{
+    color: #ffff;
+    font-size: 70px;
+}
+
+.about-us .about-content .services .row .icon-text
+{
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffff;
+    padding: 0;
+    margin: 0;
 }
 
 .about-us .about-content .why-us 
@@ -765,7 +588,7 @@ ul
 .about-us .about-content .why-us h2
 {
   font-weight: bold;
-  color: var(--primary);
+  color: #ffff;
 }
 
 @media screen and (max-width: 2560px) and (min-width: 2060px)
@@ -778,11 +601,6 @@ ul
 
 @media screen and (max-width: 2560px) and (min-width: 1207px)
 {
-    .about-us #main-h
-    {
-        margin-top: 2%;
-    }
-
     .about-us .about-content .content p
     {
         padding-right: 20%;
@@ -832,7 +650,7 @@ ul
     .about-us .about-content .content p
     {
       padding-left: 15%;
-      padding-right: 10%;
+      padding-right: 6%;
     }
 
     .about-us .about-content .services:nth-child(1) .service:nth-child(3)
@@ -865,7 +683,7 @@ ul
 
     .about-us .about-content .content p
     {
-        padding-left: 4%;
+        padding-left: 12%;
         padding-right: 0;
     }
 
@@ -886,19 +704,23 @@ ul
     {
         font-size: small;
     }
-}
 
-@media screen and (max-width: 320px)
-{
-    .about-us .about-content .content:nth-child(1),
-    .about-us .about-content .content:nth-child(2)
+    .about-us .about-content .content p
     {
-       padding-left: 8%;
+        padding-left: 6%;
     }
 }
 
+
 @media screen and (max-width: 320px)
 {
+    .about-us #main-h h1
+    {
+        font-size: 15px;
+        padding-left: 2%;
+        padding-right: 1%;
+    }
+
     .about-us .about-content .image
     {
        width: 26rem;
@@ -926,9 +748,20 @@ ul
         padding-left: 0;
         padding-right: 0;
     }
+
+    .about-us .about-content .content:nth-child(1),
+    .about-us .about-content .content:nth-child(2)
+    {
+       padding-left: 10%;
+    }
 }
 
 /* Techs */
+
+.techs
+{
+    background-color: var(--primary);
+}
 
 .techs .slider
 {
@@ -942,16 +775,10 @@ ul
     margin-left: 2%;
     margin-right: 2%;
     max-width: 7rem;
-    background-color: #fcf6f6;
     padding-top: 2%;
     padding-bottom: 2%;
     border-radius: 10px;
     background-size: cover;
-}
-
-.techs .slider .slider-img:hover
-{
-    background-image: url(../pictures/cover3.png);
 }
 
 .techs .container-flex img
@@ -963,7 +790,7 @@ ul
 
 .techs h1
 {
-    color: var(--primary);
+    color: #ffff;
     font-weight: bold;
     font-size: 20px;
     position: relative;
@@ -1044,12 +871,88 @@ ul
     }
 }
 
-/* Contact Us */
+/* Projects */
 
+.projects
+{
+    background-color: var(--primary);
+}
+
+.projects h1
+{
+    color: #ffff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.projects .project
+{
+    display: flex;
+}
+
+.projects .project-box
+{
+    flex-direction: column;
+    width: 18rem;
+}
+
+.projects .project-box h3
+{
+    font-weight: bold;
+}
+
+.projects .project-box p
+{
+    min-height: 7rem;
+}
+
+.projects .project-box .project-img img
+{
+    width: 18rem;
+}
+
+@media  screen and (max-width: 2560px) and (min-width: 2060px)
+{
+    .projects h1
+    {
+        margin-left: 10%;
+    }
+}
+
+@media  screen and (max-width: 768px)
+{
+    .projects h1
+    {
+        padding-left: 3%;
+    }
+
+    .projects .container-flex
+    {
+        display: flex;
+    }
+
+    .projects .project-box
+    {
+        margin-top: 2rem;
+    }
+}
+
+@media  screen and (max-width: 600px)
+{
+    .projects .container-flex
+    {
+        display: inline;
+    }
+}
+
+/* Contact Us */
 .contact .container-flex
 {
     background-image: url(../pictures/cover1.png);
     background-size: cover;
+    padding: 0;
+    margin: 0;
 }
 
 .contact .container-flex h3
@@ -1071,7 +974,7 @@ ul
 
 .contact .cover
 {
-    background-color: rgba(4, 35, 65, 0.541)
+    background-color: rgba(4, 35, 65, 0.541);
 }
 
 .contact .contact-info
@@ -1230,162 +1133,6 @@ ul
     outline: none;
     border: 2px var(--primary) solid;
     color: var(--primary);
-}
-
-/* Projects */
-.projects h1
-{
-    color: var(--primary);
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.projects .project
-{
-    flex-direction: column;
-}
-
-.projects .project-img
-{
-    position: relative;
-    animation: slide-in 2s 1;
-}
-
-.projects .project-image
-{
-    width: 70%;
-}
-
-.projects .project-details
-{
-    position: relative;
-    animation: slide-out 2s 1;
-}
-
-.projects .project-techs
-{
-    background-color: var(--primary);
-    width: 40%;
-    height: 10px;
-    border-radius: 20px;
-}
-
-.projects .project-techs div
-{
-    position: absolute;
-}
-
-.projects .project-techs
-{
-    position: relative;
-    animation: fade-in 2s 1;
-}
-
-.projects .project-techs img
-{
-    width: 3rem;
-}
-
-.projects .project-techs img:hover
-{
-    transform: scale(1.1);
-}
-
-.projects .project-details i
-{
-    color: var(--primary);
-    font-size: 30px;
-}
-
-.projects .project-details i:hover
-{
-    color: var(--secondary)
-}
-
-.projects h3
-{
-    color: var(--primary);
-    font-weight: 800;
-}
-
-.projects p
-{
-    color: var(--primary);
-}
-
-@media  screen and (max-width: 2560px) and (min-width: 2060px)
-{
-    .projects h1
-    {
-        margin-left: 10%;
-    }
-
-    .projects .project-image
-    {
-        margin-right: 15%;
-    }
-
-    .projects .project-techs
-    {
-        width: 40%;
-    }
-
-    .projects .project-details
-    {
-        margin-left: 15%;
-    }
-}
-
-@media  screen and (max-width: 768px)
-{
-    .projects h1
-    {
-        padding-left: 3%;
-    }
-
-    .projects .project-image
-    {
-        width: 80%;
-    }
-}
-
-@media  screen and (max-width: 425px)
-{
-    .projects .project-img
-    {
-        text-align: center;
-        padding-top: 5%;
-        padding-bottom: 5%;
-    }
-
-    .projects .project-image
-    {
-        width: 70%;
-    }
-
-    .projects .project-box
-    {
-        flex-direction: column;
-    }
-
-    .projects .project-techs
-    {
-        width: 80%;
-    }
-}
-
-@media  screen and (max-width: 320px)
-{
-    .projects .project-details .status p
-    {
-        width: 100%;
-        white-space: nowrap;
-    }
-
-    .projects .project-details .status div:nth-child(2)
-    {
-        margin-left: 10%;
-    }
 }
 
 /* Footer */
