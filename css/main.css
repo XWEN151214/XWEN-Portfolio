@@ -172,7 +172,7 @@ ul
     margin-top: 2rem;
     margin-left: 33rem;
     position: absolute;
-    background-color: var(--secondary);
+    background-color: var(--primary-light);
     border-radius: 10px;
     z-index: 10;
 }
@@ -295,7 +295,7 @@ ul
 .menu .social-link i:hover
 {
     color: var(--tertiary);
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .menu .menu-btn
@@ -441,13 +441,6 @@ ul
     position: relative;
 }
 
-.about-us .row .journey-image
-{
-    width: 30rem;
-    height: 20rem;
-    position: relative;
-}
-
 .about-us h1
 {
     color: #ffff;
@@ -508,19 +501,18 @@ ul
     max-width: 15rem;
     height: 10rem;
     border-radius: 5px;
-    border-width: 3px;
-    border-style: solid;
-    border-color: #ffff;
+    background-color: var(--primary-light);
     padding: 0;
     align-items: center;
     position: relative;
     flex-direction: column;
     flex-wrap: nowrap;
+    transition: 0.5s;
 }
 
 .about-us .about-content .services .row:hover
 {
-   box-shadow: 5px 5px 5px 5px var(--tertiary);
+   background-color: var(--secondary);
 }
 
 .about-us .about-content .services .row:hover
@@ -1159,7 +1151,7 @@ footer .social-link
 
 footer .social-link:hover
 {
-    transform: scale(1.1);
+    transform: scale(1.2);
     background-color: var(--secondary);
     text-decoration: none;
 }
