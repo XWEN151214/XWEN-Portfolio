@@ -16,8 +16,36 @@ function hide()
 
 function next_slide()
 {
-   if(slide_idx + 1 < intro_arr.length)
-   {
+    if(slide_idx == intro_arr.length - 1)
+    {
+       
+        intro_arr[slide_idx].style.animation = null;
+        intro_arr[slide_idx].offSetHeight;     
+        intro_arr[slide_idx].style.animation = "fade-out 600ms 1";
+        intro_arr[slide_idx].addEventListener
+        (
+            "animationend",
+            function()
+            {
+                
+                if(intro_arr[slide_idx].style.animationName === "fade-out" && is_next)
+                {
+                    intro_arr[slide_idx].style.display = "none";
+                    if(slide_idx!=intro_arr.length){
+                        console.log(slide_idx);
+                    slide_idx=0;
+                    intro_arr[slide_idx].style.display = "block";
+                    intro_arr[slide_idx].style.animation = null;
+                    intro_arr[slide_idx].offSetHeight;
+                    intro_arr[slide_idx].style.animation = "slide-in 1s 1";   
+                }
+                
+                }
+            }
+        ); 
+    }
+    if(slide_idx + 1 < intro_arr.length)
+    {
         intro_arr[slide_idx].style.animation = null;
         intro_arr[slide_idx].offSetHeight;
         intro_arr[slide_idx].style.animation = "fade-out 600ms 1";
@@ -29,21 +57,54 @@ function next_slide()
                 if(intro_arr[slide_idx].style.animationName === "fade-out" && is_next)
                 {
                     intro_arr[slide_idx].style.display = "none";
+                    if(slide_idx!=intro_arr.length){
+                        console.log(slide_idx);
                     slide_idx++;
                     intro_arr[slide_idx].style.display = "block";
                     intro_arr[slide_idx].style.animation = null;
                     intro_arr[slide_idx].offSetHeight;
                     intro_arr[slide_idx].style.animation = "slide-in 1s 1";   
                 }
+                
+                }
             }
         ); 
-   }
+    }
 }
 
 function prev_slide()
 {
-   if(slide_idx - 1 >= 0 && is_prev)
-   {
+    if(slide_idx == 0)
+    {
+       
+        intro_arr[slide_idx].style.animation = null;
+        intro_arr[slide_idx].offSetHeight;   
+        intro_arr[slide_idx].style.animation = "fade-out 600ms 1";
+        intro_arr[slide_idx].addEventListener
+        (
+            "animationend",
+            function()
+            {
+                
+                if(intro_arr[slide_idx].style.animationName === "fade-out" && is_prev)
+                {
+                    intro_arr[slide_idx].style.display = "none";
+                    if(slide_idx!=intro_arr.length)
+                    {
+                       
+                        slide_idx=intro_arr.length-1;
+                        intro_arr[slide_idx].style.display = "block";
+                        intro_arr[slide_idx].style.animation = null;
+                        intro_arr[slide_idx].offSetHeight;
+                        intro_arr[slide_idx].style.animation = "slide-in 1s 1";   
+                    }
+                
+                }
+            }
+        ); 
+    }
+    if(slide_idx - 1 >= 0 && is_prev)
+    {
         intro_arr[slide_idx].style.animation = null;
         intro_arr[slide_idx].offSetHeight;
         intro_arr[slide_idx].style.animation = "fade-out 600ms 1";
@@ -63,7 +124,7 @@ function prev_slide()
                 }
             }
         ); 
-   }
+    }
 }
 
 hide();
