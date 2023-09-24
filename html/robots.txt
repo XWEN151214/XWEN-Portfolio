@@ -1,0 +1,7 @@
+User-agent: Unnecessarybot
+Disallow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: https://xwen151214.github.io/XWEN-Portfolio/html/sitemaps/sitemap.txt
