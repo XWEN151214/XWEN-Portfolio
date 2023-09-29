@@ -122,6 +122,7 @@ ul
     background-color: var(--tertiary);
     color: var(--primary);
     font-weight: 500;
+    min-width: 8rem;
 }
 
 .btn a
