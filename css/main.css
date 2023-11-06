@@ -87,10 +87,28 @@ ul
     height: 5rem;
     width: 5rem;
     position: absolute;
-    left: 3%;
-    top: 1%;
+    left: 1%;
+    top: 0;
 }
 
+@media screen and (max-width: 2560px) and (min-width: 1300px)
+{
+    .logo
+    {
+        left: 13%;
+        top: 0;
+    }
+}
+
+@media screen and (max-width: 768px) 
+{
+    .logo
+    {
+        position: absolute;
+        top: 1%;
+        left: 3%;
+    }
+}
 
 @media screen and (max-width: 425px)
 {
@@ -154,8 +172,7 @@ ul
 }
 
 /* Main Menu */
-
-.menu .row .menu-items
+.menu .row .menu-item
 {
     position: relative;
 }
@@ -176,8 +193,8 @@ ul
 {
     .menu .row
     {
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 16%;
+        padding-right: 16%;
     }
 }
 
@@ -367,7 +384,7 @@ ul
 {
     .header .intro-text
     {
-        padding-left: 10%;
+        padding-left: 15%;
     }
 } 
 
@@ -405,6 +422,20 @@ ul
 {
    position: absolute;
    right: 30px;
+}
+
+
+@media screen and (max-width: 2560px) and (min-width: 1300px)
+{
+    .header .next
+    {
+        right: 15%;
+    }
+
+    .header .prev
+    {
+        left: 12%;
+    }
 }
 
 @media screen and (max-width: 425px)
