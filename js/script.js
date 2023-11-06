@@ -17,6 +17,11 @@ let service_phrase =
 ];
 let text_idx = 0;
 let hasleft = false;
+let tech_img = document.getElementsByClassName("tech-img");
+let img_1 = document.getElementsByClassName("img-1");
+let img_2 = document.getElementsByClassName("img-2");
+let slider_img = document.getElementsByClassName("slider-img");
+
 
 function display_menu()
 {
@@ -39,48 +44,21 @@ function display_menu()
     )
 }
 
-function is_scrolled_in(ele)
-{
-    let elem_rect = ele.getBoundingClientRect();
-    let top = elem_rect.top;
-    let bottom = elem_rect.bottom;
-    return ((top >=0) && (bottom < window.innerHeight));
-}
+// function is_scrolled_in(ele)
+// {
+//     let elem_rect = ele.getBoundingClientRect();
+//     let top = elem_rect.top;
+//     let bottom = elem_rect.bottom;
+//     return ((bottom > window.innerHeight)) ;
+// }
 
 function start_ani(ele, css_ani)
 {
-    if(is_scrolled_in(ele))
-    {
-       ele.style.animation = null;
-       ele.offsetHeight;
-       ele.style.animation = css_ani;
-    }
+    ele.style.animation = null;
+    ele.offsetHeight;
+    ele.style.animation = css_ani;
 }
 
-function display_service()
-{
-   for(let i=0; i<service_arr.length; i++)
-   {
-     service_arr[i].addEventListener
-     (
-        "mouseenter",
-        function()
-        {
-            setTimeout(
-                function()
-                {
-                    text_idx = 0;
-                    hasleft = false;
-                    description_arr[i].style.display = "block";
-                    description_arr[i].style.animation = null
-                    description_arr[i].offsetHeight;
-                    description_arr[i].style.animation = "fade-in 1s 1";
-                    type(service_phrase[i], service_text[i]);
-                }, 50);
-        }
-     )
-   }
-}
 
 function hide_servcie()
 {
@@ -94,38 +72,38 @@ function hide_servcie()
             text_idx = 0;
             hasleft = true;
             description_arr[i].style.display = "none";
-            service_text[i].innerHTML = null;
          }
       )
     }
 }
 
-function type(phrase, text)
+
+function tech_ani()
 {
-    hide_servcie();
-    if(text_idx < phrase.length && !hasleft)
+
+    slider_img[0].style.animation = null;
+    slider_img[0].offsetHeight;
+    slider_img[0].style.animation = "slide-in 0.5s 1";
+    for(let i=1; i<slider_img.length; i++)
     {
-        text.innerHTML += phrase[text_idx];
-        text_idx++;
-        setTimeout(
+        slider_img[i].style.visibility = "hidden";
+    }
+    for(let i=1; i<slider_img.length; i++)
+    {
+        slider_img[i - 1].addEventListener
+        (
+            "animationend",
             function()
             {
-               type(phrase, text);
-            }, 50);
-    }
-    else
-    {
-        text_idx = 0;
+                slider_img[i].style.visibility = "visible";
+                slider_img[i].style.animation = null;
+                slider_img[i].offsetHeight;
+                slider_img[i].style.animation = "slide-in 0.5s 1";
+            }
+        )
     }
 }
 
+
 display_menu();
-display_service();
-// document.addEventListener
-// (
-//     "scroll",
-//     function()
-//     {
-//         start_ani(main_h, "fade-in 2s 1");
-//     }
-// )
+tech_ani();

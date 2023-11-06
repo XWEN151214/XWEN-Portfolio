@@ -16,7 +16,7 @@ function border_bottom(idx)
 }
 
 hide();
-tab_btn[0].style.borderBottom = "2px var(--primary) solid";
+tab_btn[0].style.borderBottom = "2px #ffff solid";
 for(let i=0; i<tab_btn.length; i++)
 {
     tab_btn[i].addEventListener
@@ -27,7 +27,7 @@ for(let i=0; i<tab_btn.length; i++)
             about_arr[idx].style.display = "none";
             tab_btn[idx].style.borderBottom = "none";
             about_arr[i].style.display = "flex";
-            tab_btn[i].style.borderBottom = "2px var(--primary) solid";
+            tab_btn[i].style.borderBottom = "2px #ffff solid";
             idx = i;
         }
     )
