@@ -86,17 +86,11 @@ ul
 {
     height: 5rem;
     width: 5rem;
+    position: absolute;
+    left: 3%;
+    top: 1%;
 }
 
-@media screen and (max-width: 768px) 
-{
-    .logo
-    {
-        position: absolute;
-        top: 1%;
-        left: 3%;
-    }
-}
 
 @media screen and (max-width: 425px)
 {
@@ -176,6 +170,15 @@ ul
     background-color: var(--primary-light);
     border-radius: 10px;
     z-index: 10;
+}
+
+@media screen and (max-width: 2560px) and (min-width: 1300px)
+{
+    .menu .row
+    {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
 }
 
 @media screen and (max-width: 768px) 
@@ -360,7 +363,7 @@ ul
     padding-left: 3%;
 }
 
-@media screen and (max-width: 2560px) and (min-width: 2060px)
+@media screen and (max-width: 2560px) and (min-width: 1300px)
 {
     .header .intro-text
     {
@@ -584,7 +587,7 @@ ul
   color: #ffff;
 }
 
-@media screen and (max-width: 2560px) and (min-width: 2060px)
+@media screen and (max-width: 2560px) and (min-width: 1300px)
 {
     .about-us #main-h
     {
@@ -789,7 +792,7 @@ ul
     position: relative;
 }
 
-@media screen and (max-width: 2560px) and (min-width: 2060px)
+@media screen and (max-width: 2560px) and (min-width: 1300px)
 {
     .techs h1
     {
@@ -905,7 +908,7 @@ ul
     width: 18rem;
 }
 
-@media  screen and (max-width: 2560px) and (min-width: 2060px)
+@media  screen and (max-width: 2560px) and (min-width: 1300px)
 {
     .projects h1
     {
@@ -977,7 +980,7 @@ ul
 }
 
 
-@media  screen and (max-width: 2560px)  and (min-width: 2060px)
+@media  screen and (max-width: 2560px)  and (min-width: 1300px)
 {
     .contact .contact-info
     {
@@ -1030,7 +1033,7 @@ ul
     width: 110%;
 }
 
-@media  screen and (max-width: 2560px)  and (min-width: 2060px)
+@media  screen and (max-width: 2560px)  and (min-width: 1300px)
 {
     .contact form
     {
